@@ -10,18 +10,25 @@
 </head>
 <body <?php body_class(); ?> >
 
-<div id="fh5co-wrap">
-    <header id="fh5co-header">
-        <div class="container">
-            <nav class="fh5co-main-nav">
-                <ul>
-                    <li class="fh5co-active"><a href="index.html"><span>Home</span></a></li>
-                    <li><a href="services.html"><span>Services</span></a></li>
-                    <li><a href="about.html"><span>About</span></a></li>
-                    <li><a href="contact.html"><span>Contact</span></a></li>
-                </ul>
-            </nav>
+<!--Home page style-->
+<header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a href="#" class="navbar-brand">devDevil</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#mainMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="mainMenu" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact Me</a></li>
+            </ul>
         </div>
-    </header>
+        
+    </nav>
+</header>
 
 
