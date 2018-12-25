@@ -7,5 +7,34 @@
 html, body{
 	width: 100%;
 	height: 100%;
-	
+	font-size: 1.2em;
+}
+
+.navbar{
+	background-color: #23415c;
+	padding: 1% 0;
+}
+.navbar-brand{
+	min-height: 55px;
+	padding: 0 15px 5px;
+}
+.navbar-default .navbar-collapse .navbar-nav li a {
+	color: #d5d5d5;
+}
+.navbar-default .navbar-collapse .navbar-nav li a:hover,
+.navbar-default .navbar-collapse .navbar-nav li a.active{
+	color: #ffffff;
+}
+#home{
+	background: url(images/header-bg.jpg) no-repeat center center fixed;
+	display: table;
+	height: 100%;
+	position: relative;
+	width: 100%;
+	background-size: cover; 
+}
+.landing-text{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
 }
