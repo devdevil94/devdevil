@@ -14,12 +14,14 @@
 <header>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <a class="navbar-brand" href="#">
-            <img src="<?php echo get_theme_file_uri('/images/logo.png') ?>" alt="">
+            <img src="<?php echo get_theme_file_uri('/images/logo.png') ?>" alt="devDevil">
         </a>
+        
         <button class="navbar-toggler" data-toggle="collapse" data-target="#mainMenu">
             <span class="sr-only">Toggle navigation</span>
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div id="mainMenu" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
@@ -29,9 +31,16 @@
                 <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
             </ul>
-        </div>
-        
+        </div> 
     </nav>
+
+    <div id="home">
+        <div class="landing-text">
+            <h1>Saud Al Alawi</h1>
+            <h3>Electronics hobbyist, and freelance web developer</h3>
+            <a href="#" class="btn btn-primary btn-lg">My Portfolio</a>
+        </div>
+    </div>
 </header>
 
 
