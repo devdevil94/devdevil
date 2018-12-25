@@ -12,9 +12,12 @@
 
 <!--Home page style-->
 <header>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
-        <a href="#" class="navbar-brand">devDevil</a>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="<?php echo get_theme_file_uri('/images/logo.png') ?>" alt="">
+        </a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#mainMenu">
+            <span class="sr-only">Toggle navigation</span>
             <span class="navbar-toggler-icon"></span>
         </button>
         <div id="mainMenu" class="collapse navbar-collapse">
@@ -24,7 +27,7 @@
                 <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
             </ul>
         </div>
         
