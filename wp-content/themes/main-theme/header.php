@@ -12,7 +12,7 @@
 
 <!--Home page style-->
 <header>
-    <nav class="navbar navbar-expand-sm navbar-default">
+    <nav class="navbar navbar-expand-sm navbar-default fixed-top">
         <a class="navbar-brand" href="#">
             <img src="<?php echo get_theme_file_uri('/images/logo.png') ?>" alt="devDevil">
         </a>
@@ -38,7 +38,7 @@
         <div class="banner-content">
             <h1>Saud Al Alawi</h1>
             <h3>Electronics hobbyist, and freelance web developer</h3>
-            <a href="#" class="btn btn-default btn-lg">My Portfolio</a>
+            <a href="#" class="btn btn-default btn-md">My Portfolio</a>
         </div>
     </div>
 </header>
