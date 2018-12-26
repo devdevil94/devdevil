@@ -12,7 +12,7 @@
 
 <!--Home page style-->
 <header>
-    <nav class="navbar navbar-expand-sm navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-expand-sm navbar-default">
         <a class="navbar-brand" href="#">
             <img src="<?php echo get_theme_file_uri('/images/logo.png') ?>" alt="devDevil">
         </a>
@@ -25,8 +25,8 @@
         <div id="mainMenu" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+                <!-- <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li> -->
                 <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
@@ -34,11 +34,11 @@
         </div> 
     </nav>
 
-    <div id="home">
-        <div class="landing-text">
+    <div id="banner">
+        <div class="banner-content">
             <h1>Saud Al Alawi</h1>
             <h3>Electronics hobbyist, and freelance web developer</h3>
-            <a href="#" class="btn btn-primary btn-lg">My Portfolio</a>
+            <a href="#" class="btn btn-default btn-lg">My Portfolio</a>
         </div>
     </div>
 </header>

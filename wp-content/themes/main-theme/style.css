@@ -4,14 +4,24 @@
 	Version: 1.0
 */
 
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
 html, body{
 	width: 100%;
 	height: 100%;
 	font-size: 1.2em;
 }
-
+header{
+	width: 100%;
+	height: 400px;
+}
 .navbar{
-	background-color: #23415c;
+	background-color: #140a0a;
 	padding: 1% 0;
 }
 .navbar-brand{
@@ -25,16 +35,26 @@ html, body{
 .navbar-default .navbar-collapse .navbar-nav li a.active{
 	color: #ffffff;
 }
-#home{
-	background: url(images/header-bg.jpg) no-repeat center center fixed;
-	display: table;
-	height: 100%;
-	position: relative;
+#banner{
+	height: inherit;
 	width: 100%;
-	background-size: cover; 
+	display: table;
+	background-color: #050101;
+	background-repeat: no-repeat;
 }
-.landing-text{
+.banner-content{
 	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
+}
+.banner-content h1,
+.banner-content h3,
+.banner-content {
+	color: #ffffff;
+}
+.banner-content h1{
+	font-weight: 700;
+}
+.section{
+	padding: 150px 0;
 }

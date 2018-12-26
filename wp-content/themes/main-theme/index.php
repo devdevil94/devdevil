@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<div class="padding">
+<div class="section">
     <div class="container">
         <div class="row">
             <div class="col-sm-6 text-center">
@@ -12,10 +12,18 @@
                 <h1>Hello, this is Column 2</h1>
             </div>
         </div>
+        <div class="row">
+            <div class="col-sm-6 text-center">
+                <h1>Hello, this is Column 3</h1>
+            </div>
+            <div class="col-sm-6 text-center">
+                <h1>Hello, this is Column 4</h1>
+            </div>
+        </div>
     </div>
 </div>
 
-<div class="padding">
+<div class="section">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
