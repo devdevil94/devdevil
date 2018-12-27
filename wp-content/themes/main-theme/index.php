@@ -5,28 +5,31 @@
 <div class="section">
     <div class="container">
         <div class="card-deck">
-            <div class="card" style="width: 14rem;">
+            <div class="card serviceCard">
                 <div class="card-body">
                     <!-- <i class="fab fa-html5"></i> -->
-                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-title">Wordpress Development</h6>
                     <p class="card-text">
-                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                        Some quick example text to build on the card title
+                        and make up the bulk of the card's content.
                     </p>
                 </div>
             </div>
-            <div class="card" style="width: 14rem;">
+            <div class="card serviceCard">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-title">Web Development (HTML, CSS, Javascript)</h6>
                     <p class="card-text">
-                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                        Some quick example text to build on the card title
+                        and make up the bulk of the card's content.
                     </p>
                 </div>
             </div>
-            <div class="card" style="width: 14rem;">
+            <div class="card serviceCard">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-title">Web App Development</h6>
                     <p class="card-text">
-                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                        Some quick example text to build on the card title
+                        and make up the bulk of the card's content.
                     </p>
                 </div>
             </div>
