@@ -2,9 +2,6 @@
 
 function navSlide(){
     const burger = document.querySelector('.burger');
-    console.log(burger);
-    //console.log(nav);
-    //console.log(navLinks);
 
     burger.addEventListener('click', () => {
         const nav = document.querySelector('.nav-links');
