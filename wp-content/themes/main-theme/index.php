@@ -4,35 +4,30 @@
 
 <div class="section">
     <div class="container">
-        <div class="row mx-auto">
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div class="card" style="width: 14rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
-                        </p>
-                    </div>
+        <div class="card-deck">
+            <div class="card" style="width: 14rem;">
+                <div class="card-body">
+                    <!-- <i class="fab fa-html5"></i> -->
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div class="card" style="width: 14rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
-                        </p>
-                    </div>
+            <div class="card" style="width: 14rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div class="card" style="width: 14rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
-                        </p>
-                    </div>
+            <div class="card" style="width: 14rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </p>
                 </div>
             </div>
         </div>
