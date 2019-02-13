@@ -9,8 +9,10 @@
                 <i class="fab fa-wordpress fa-2x"></i>                
             </div>
             <h4 class="service-title">Wordpress</h4>
-            <p class="service-text">Lorem ipsum dolor sit amet, id enum nisl congue, ut pro tamquam
-                delicata. Usu errem offiis accumsan nam impetus id nusquam.
+            <p class="service-text">
+                Lorem ipsum dolor sit amet, nam purto etiam veniam in,
+                placerat scribentur delicatissimi ei cum.Id wisi quaestio volutpat usu.
+                Platonem referrentur ea mel, est fuisset appellantur cu, equidem concludaturque quo ei.
             </p>
         </div>
         <div class="service-panel">
@@ -20,8 +22,10 @@
                 <i class="fab fa-js-square fa-2x"></i>
             </div>
             <h4 class="service-title">Front End</h4>
-            <p class="service-text">Lorem ipsum dolor sit amet, id enum nisl congue, ut pro tamquam
-                delicata. Usu errem offiis accumsan nam impetus id nusquam.
+            <p class="service-text">
+                Lorem ipsum dolor sit amet, nam purto etiam veniam in,
+                placerat scribentur delicatissimi ei cum.Id wisi quaestio volutpat usu.
+                Platonem referrentur ea mel, est fuisset appellantur cu, equidem concludaturque quo ei. 
             </p>
         </div>
         <div class="service-panel">
@@ -31,8 +35,10 @@
                 <i class="fas fa-mobile-alt fa-2x"></i>
             </div>
             <h4 class="service-title">Web Application</h4>
-            <p class="service-text">Lorem ipsum dolor sit amet, id enum nisl congue, ut pro tamquam
-                delicata. Usu errem offiis accumsan nam impetus id nusquam.
+            <p class="service-text">
+                Lorem ipsum dolor sit amet, nam purto etiam veniam in,
+                placerat scribentur delicatissimi ei cum.Id wisi quaestio volutpat usu.
+                Platonem referrentur ea mel, est fuisset appellantur cu, equidem concludaturque quo ei.
             </p>
         </div>
     </div>
@@ -40,15 +46,32 @@
 
 <div class="section posts">
     <div class="posts-container">
-        <?php while(have_posts()){}
-            
+        <?php 
+            $homePostsQuery = new WP_Query(array(
+                'posts_per_page' => 4
+            ));
+
+            while($homePostsQuery->have_posts()){
+                $homePostsQuery->the_post();
             ?>
-        <div class="post">
-            <img src="#" alt="post-image">
-            <h3 class="post-title">Post Title</h3>
-            <h4 class="post-excerpt">Excerpt</h4>
-            <p class="post-author">Author name</p>
-        </div>
+                <div class="post-panel">
+                    <img src="#" alt="post-image">
+                    <h3 class="post-title"><?php the_title(); ?></h3>
+                    <p class="post-author"> By <?php the_author(); ?></p>          
+                    <h4 class="post-excerpt">
+                        <?php
+                            if(has_excerpt())
+                                echo get_the_excerpt();
+                            else
+                                echo wp_trim_words(get_the_content(), 20);
+                            ?>
+                    </h4>
+                    <p class="post-date">Date Here</p>  
+                </div>
+        <?php 
+            }
+            ?>
+
     </div>
 </div>
 
