@@ -12,11 +12,17 @@ function load_fontawesome(){
 }
 
 function load_custom_files(){     
-    wp_enqueue_script('responsive-nav-menu', get_template_directory_uri().'/js/main.js', array('jquery'), '1.0', true);
+    wp_enqueue_script('responsive-nav-menu', get_template_directory_uri().'/js/main.js', NULL, '1.0', true);
     wp_enqueue_style('main-stylesheet', get_stylesheet_uri(), NULL, microtime());
 }
 
-//add_action('wp_enqueue_scripts', 'load_bootstrap');
+function add_theme_features(){
+    add_theme_support( 'post-thumbnails' );
+
+    add_image_size( 'home-post-thumbnail', 350, 350, true );
+}
+
+add_action('after_setup_theme', 'add_theme_features');
 add_action('wp_enqueue_scripts', 'load_custom_files');
 add_action('wp_enqueue_scripts', 'load_fontawesome');
 ?>

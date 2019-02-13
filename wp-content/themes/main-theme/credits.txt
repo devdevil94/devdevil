@@ -1,0 +1,8 @@
+
+
+
+555 Timer -> https://www.electroschematics.com/7114/inverted-555-timer-circuit/
+Raspberry Pi Zero -> https://www.raspberrypi.org/products/raspberry-pi-zero/
+Block Diagram -> https://tex.stackexchange.com/questions/175969/block-diagrams-using-tikz
+Logic Gates -> http://transuniv.blogspot.com/2014/12/how-to-become-expert-in-logic-gates.html
+Hello, World! -> https://medium.com/@eraylson_/the-hello-world-in-data-science-and-machine-learning-32b85946eb67

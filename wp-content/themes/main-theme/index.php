@@ -55,9 +55,9 @@
                 $homePostsQuery->the_post();
             ?>
                 <div class="post-panel">
-                    <img src="#" alt="post-image">
+                    <div class="post-thumbnail"><?php the_post_thumbnail('home-post-thumbnail'); ?></div>
                     <h3 class="post-title"><?php the_title(); ?></h3>
-                    <p class="post-author"> By <?php the_author(); ?></p>          
+                    <p class="post-author"> By <a href="#"><?php the_author(); ?></a></p>          
                     <h4 class="post-excerpt">
                         <?php
                             if(has_excerpt())
