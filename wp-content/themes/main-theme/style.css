@@ -14,9 +14,9 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #5d4954;
+    background-color: #3a3f6d;
 }
-.logo{
+.logo a h4{
     color: #ffffff;
     letter-spacing: 5px;
     font-size: 20px;
@@ -63,7 +63,7 @@ nav{
         right: 0;
         top: 8vh;
         height: 92vh;
-        background: #5d4954;
+        background: #3a3f6d;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -110,7 +110,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(120, 133, 120);
+    background-color: rgb(191, 202, 191);
 }
 .service-panel{
     border: 1px solid #000000;
@@ -118,4 +118,27 @@ nav{
     margin-top: 10px;
     margin-bottom: 10px;
     width: 20%;
+}
+.service-icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.service-title{
+    text-align: center;
+}
+.service-text{
+    padding-top: 10px;
+    text-align: justify;
+}
+
+
+@media screen and (max-width:768px){
+    .services-container{
+        flex-direction: column;
+    }
+    .service-panel{
+        width: 70%;
+    }
 }

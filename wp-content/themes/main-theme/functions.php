@@ -8,7 +8,7 @@ function load_bootstrap(){
 }
 
 function load_fontawesome(){
-    wp_enqueue_style('fontawsome-css', get_theme_file_uri('/js/fontawesome/css/all.css'));
+    wp_enqueue_style('fontawsome-css', get_theme_file_uri('/lib/fontawesome/css/all.css'));
 }
 
 function load_custom_files(){     
