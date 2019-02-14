@@ -106,6 +106,24 @@ nav{
 .section{
     margin-top: 100px;
 }
+
+
+/* ///////// About Me Section \\\\\\\\\ */
+.about-container{
+    width: 50%;
+    position: relative;
+    margin: 0 auto;
+}
+#about-heading{
+    padding: 10px 0 10px 0;
+    font-size: 20px;
+}
+#about-content{
+    text-align: justify;
+}
+
+
+/* ///////// Services Section \\\\\\\\\ */
 .services-container{
     display: flex;
     justify-content: space-around;
@@ -128,7 +146,7 @@ nav{
 .service-title{
     text-align: center;
 }
-.service-text{
+.service-content{
     padding-top: 10px;
     text-align: justify;
 }
@@ -142,7 +160,7 @@ nav{
         width: 70%;
     }
 }
-/*///////////Recent Posts Section \\\\\\\\\\\*/
+/*//////// Recent Posts Section \\\\\\\\*/
 .posts-container{
     display: flex;
     justify-content: space-around;
@@ -154,19 +172,23 @@ nav{
 .post-panel{
     display: flex;
     flex-direction: column;
+    align-content: space-between;
     border: 1px solid rgb(155, 155, 136);
-    padding: 10px;
+    padding: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
     flex-basis: 35%;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 .post-panel:hover{
     opacity: 0.8;
 }
 .post-thumbnail{
     text-align: center;
-    border-radius: 10px;
+    border-radius: 7px 7px 0 0;    
+}
+.post-thumbnail img{
+    border-radius: 7px 7px 0 0;
 }
 .post-title{
     text-align: center;
@@ -176,7 +198,6 @@ nav{
 .post-date{
     text-align: start;
     margin-top: 20px;
-    align-self: flex-end;
 }
 .post-excerpt{
     padding-top: 10px;

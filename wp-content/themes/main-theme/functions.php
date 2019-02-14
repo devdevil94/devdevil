@@ -19,7 +19,7 @@ function load_custom_files(){
 function add_theme_features(){
     add_theme_support( 'post-thumbnails' );
 
-    add_image_size( 'home-post-thumbnail', 350, 350, true );
+    add_image_size( 'home-post-thumbnail', 400, 350, true );
 }
 
 add_action('after_setup_theme', 'add_theme_features');
