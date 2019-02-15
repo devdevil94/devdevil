@@ -17,11 +17,11 @@
             <a href="#"><h4>devDevil</h4></a>
         </div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="link"><a href="#">Home</a></li>
+            <li class="link"><a href="#">Blog</a></li>
+            <li class="link"><a href="#">Projects</a></li>
+            <li class="link"><a href="#">About</a></li>
+            <li class="link"><a href="#">Contact</a></li>
         </ul>
         <div class="burger">
             <div class="line1"></div>
@@ -29,6 +29,14 @@
             <div class="line3"></div>
         </div>
     </nav>
+
+    <div id="home-banner">
+        <div id="banner-content">
+            <h1 id="banner-title">Saud Al Alawi</h1>
+            <h3 id="banner-subtitle">Electronics hobbyist and Freelance Web Developer</h3>
+            <a class="portfolio-btn" href="#">View My Portfolio</a>
+        </div>
+    </div>
 </header>
 
 

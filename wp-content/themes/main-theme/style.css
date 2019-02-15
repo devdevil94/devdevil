@@ -4,17 +4,44 @@
 	Version: 1.0
 */
 
+/* ///////// Color Scheme \\\\\\\\\ */
+
+/* 
+Sunset Orange -> #FE5F55
+Mellow Apricot -> #F0B67F 
+Pastel Gray -> #D6D1B1
+Tea Green -> #C7EFCF
+Beige -> #EEF5DB
+*/
+/* ///////// Global \\\\\\\\\ */
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+.section{
+    margin-top: 100px;
+}
+.section-heading{
+    padding: 10px 0 10px 0;
+    font-size: 20px;
+    text-align: center;
+}
+#home{
+    padding: 0 10%;
+}
+
+/* ///////// Navigation Menu Section \\\\\\\\\ */
+
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
-    background-color: #3a3f6d;
+    background-color: #C7EFCF;
+}
+.logo a{
+    text-decoration: none;
 }
 .logo a h4{
     color: #ffffff;
@@ -25,16 +52,23 @@ nav{
     display: flex;
     width: 35%;
     justify-content: space-around;
+    text-align: center;
 }
-.nav-links li{
+.link{
     list-style: none;
+    width: 100%;
+    padding: 4vh 15px;
+}
+.nav-links li:hover{
+    background-color: #FE5F55;
 }
 .nav-links a{
-    color: #dadada;
+    color: #F0B67F;
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: bold;
     font-size: 14px;
+    padding: 50% 0;
 }
 .burger{
     display: none;
@@ -43,7 +77,7 @@ nav{
 .burger div{
     width: 25px;
     height: 3px;
-    background-color: #dadada;
+    background-color: #ffffff;;
     margin: 5px;
     transition: all 0.3s ease;
 }
@@ -61,18 +95,20 @@ nav{
     .nav-links{
         position: absolute;
         right: 0;
-        top: 8vh;
-        height: 92vh;
-        background: #3a3f6d;
+        top: 15vh;
+        height: 70vh;
+        background: #C7EFCF;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        width: 40%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        z-index: 2;
     }
-    .nav-links li{
+    .link{
         opacity: 0;
+        width: 100%;
     }
     .burger{
         display: block;
@@ -103,19 +139,37 @@ nav{
 .toggle .line3{
     transform: rotate(45deg) translate(-5px, -6px);
 }
-.section{
-    margin-top: 100px;
+
+/* ///////// Banner Section \\\\\\\\\ */
+#home-banner{
+    width: 100%;
+    height: 400px;
+    background-color: #FE5F55;
 }
-.section-heading{
-    padding: 10px 0 10px 0;
-    font-size: 20px;
+#banner-content{
+    width: 50%;
+    position: relative;
+    margin: 0 auto;
+    top: 50%;
     text-align: center;
 }
-
-#home{
-    padding: 0 5%;
+#banner-title{
+    font-size: 40px;
+    font-weight: 800;
 }
-
+.portfolio-btn{
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+    border: 1px solid #EEF5DB;
+    border-radius: 3px;
+    color: #EEF5DB;
+    padding: 8px;
+}
+.portfolio-btn:hover{
+    background-color: #C7EFCF;
+    color: #FE5F55;
+}
 
 /* ///////// About Me Section \\\\\\\\\ */
 .about-container{
