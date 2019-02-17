@@ -7,11 +7,9 @@
 /* ///////// Color Scheme \\\\\\\\\ */
 
 /* 
-Sunset Orange -> #FE5F55
-Mellow Apricot -> #F0B67F 
-Pastel Gray -> #D6D1B1
+Nice Blue -> #6242f4
 Tea Green -> #C7EFCF
-Beige -> #EEF5DB
+Very Light Gray -> #FAF9FF
 */
 /* ///////// Global \\\\\\\\\ */
 
@@ -21,15 +19,21 @@ Beige -> #EEF5DB
     box-sizing: border-box;
 }
 .section{
-    margin-top: 100px;
+    padding: 50px 0;
 }
 .section-heading{
     padding: 10px 0 10px 0;
     font-size: 20px;
     text-align: center;
 }
-#home{
+/* #home{
     padding: 0 10%;
+} */
+.big-btn{
+    padding: 20px 40px;;
+}
+body{
+    padding: 0 150px;
 }
 
 /* ///////// Navigation Menu Section \\\\\\\\\ */
@@ -55,20 +59,19 @@ nav{
     text-align: center;
 }
 .link{
+    display: block;
     list-style: none;
     width: 100%;
     padding: 4vh 15px;
 }
-.nav-links li:hover{
-    background-color: #FE5F55;
-}
-.nav-links a{
+
+.nav-links .link a{
     color: #F0B67F;
     text-decoration: none;
-    letter-spacing: 2px;
-    font-weight: bold;
-    font-size: 14px;
     padding: 50% 0;
+}
+.nav-links .link a:hover{
+    background-color: #FE5F55;
 }
 .burger{
     display: none;
@@ -143,7 +146,7 @@ nav{
 /* ///////// Banner Section \\\\\\\\\ */
 #home-banner{
     width: 100%;
-    height: 400px;
+    height: 500px;
     background-color: #FE5F55;
 }
 #banner-content{
@@ -160,11 +163,11 @@ nav{
 .portfolio-btn{
     display: inline-block;
     text-decoration: none;
-    margin-top: 20px;
+    margin-top: 40px;
     border: 1px solid #EEF5DB;
     border-radius: 3px;
     color: #EEF5DB;
-    padding: 8px;
+    transition: 0.3s ease-in;
 }
 .portfolio-btn:hover{
     background-color: #C7EFCF;
@@ -172,22 +175,27 @@ nav{
 }
 
 /* ///////// About Me Section \\\\\\\\\ */
+#about-me{
+    background-color: #F0B67F;
+}
 .about-container{
-    width: 50%;
-    position: relative;
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 #about-content{
     text-align: justify;
 }
 
-
 /* ///////// Services Section \\\\\\\\\ */
+#services{
+    background-color: #EEF5DB;
+}
 .services-container{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(191, 202, 191);
+    background-color: inherit;
 }
 .service-panel{
     border: 1px solid #000000;
@@ -238,9 +246,11 @@ nav{
     margin-bottom: 20px;
     flex-basis: 35%;
     border-radius: 7px;
+    transition: 0.3s ease-in;
 }
 .post-panel:hover{
     opacity: 0.8;
+    transform: scale(1.02);
 }
 .post-thumbnail{
     text-align: center;

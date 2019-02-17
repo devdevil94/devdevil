@@ -24,19 +24,20 @@
             <li class="link"><a href="#">Contact</a></li>
         </ul>
         <div class="burger">
+            <!-- <i class="fa fa-bars"></i> -->
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
     </nav>
 
-    <div id="home-banner">
+    <!-- <div id="home-banner">
         <div id="banner-content">
             <h1 id="banner-title">Saud Al Alawi</h1>
             <h3 id="banner-subtitle">Electronics hobbyist and Freelance Web Developer</h3>
-            <a class="portfolio-btn" href="#">View My Portfolio</a>
+            <a class="portfolio-btn big-btn" href="#">View My Portfolio</a>
         </div>
-    </div>
+    </div> -->
 </header>
 
 
