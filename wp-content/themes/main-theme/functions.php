@@ -12,8 +12,8 @@ function load_fontawesome(){
 }
 
 function load_custom_files(){     
-    wp_enqueue_script('responsive-nav-menu', get_template_directory_uri().'/js/main.js', NULL, '1.0', true);
     wp_enqueue_style('main-stylesheet', get_stylesheet_uri(), NULL, microtime());
+    wp_enqueue_script('responsive-nav-menu', get_template_directory_uri().'/js/main.js', NULL, microtime(), true);
 }
 
 function add_theme_features(){

@@ -17,6 +17,7 @@ Very Light Gray -> #FAF9FF
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 .section{
     padding: 50px 0;
@@ -33,16 +34,21 @@ Very Light Gray -> #FAF9FF
     padding: 20px 40px;;
 }
 body{
-    padding: 0 150px;
+    
 }
 
 /* ///////// Navigation Menu Section \\\\\\\\\ */
-
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+header{
+    padding: 0 150px;
+    width: 100%;
     background-color: #C7EFCF;
+}
+.logo{
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    float: left;
 }
 .logo a{
     text-decoration: none;
@@ -50,7 +56,9 @@ nav{
 .logo a h4{
     color: #ffffff;
     letter-spacing: 5px;
-    font-size: 20px;
+}
+nav{
+    float: right;
 }
 .nav-links{
     display: flex;
@@ -59,25 +67,26 @@ nav{
     text-align: center;
 }
 .link{
-    display: block;
     list-style: none;
-    width: 100%;
-    padding: 4vh 15px;
 }
-
 .nav-links .link a{
+    display: block;
     color: #F0B67F;
     text-decoration: none;
-    padding: 50% 0;
+    padding: 0 20px;
+    line-height: 50px;
 }
 .nav-links .link a:hover{
     background-color: #FE5F55;
 }
-.burger{
+.nav-links .link a.active{
+    background-color: #FE5F55;
+}
+.menu-bars{
     display: none;
     cursor: pointer;
 }
-.burger div{
+.menu-bars div{
     width: 25px;
     height: 3px;
     background-color: #ffffff;;
@@ -85,11 +94,11 @@ nav{
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width:1024px){
+/* @media screen and (max-width:1024px){
     .nav-links{
         width: 50%;
     }
-}
+} */
 
 @media screen and (max-width:768px){
     body{
@@ -113,12 +122,12 @@ nav{
         opacity: 0;
         width: 100%;
     }
-    .burger{
+    .menu-bars{
         display: block;
     }
 }
 
-.nav-active{
+.mobile-nav-active{
     transform: translateX(0);
 }
 
@@ -143,90 +152,11 @@ nav{
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* ///////// Banner Section \\\\\\\\\ */
-#home-banner{
-    width: 100%;
-    height: 500px;
-    background-color: #FE5F55;
-}
-#banner-content{
-    width: 50%;
-    position: relative;
-    margin: 0 auto;
-    top: 50%;
-    text-align: center;
-}
-#banner-title{
-    font-size: 40px;
-    font-weight: 800;
-}
-.portfolio-btn{
-    display: inline-block;
-    text-decoration: none;
-    margin-top: 40px;
-    border: 1px solid #EEF5DB;
-    border-radius: 3px;
-    color: #EEF5DB;
-    transition: 0.3s ease-in;
-}
-.portfolio-btn:hover{
-    background-color: #C7EFCF;
-    color: #FE5F55;
-}
-
-/* ///////// About Me Section \\\\\\\\\ */
-#about-me{
-    background-color: #F0B67F;
-}
-.about-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-#about-content{
-    text-align: justify;
-}
-
-/* ///////// Services Section \\\\\\\\\ */
-#services{
-    background-color: #EEF5DB;
-}
-.services-container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: inherit;
-}
-.service-panel{
-    border: 1px solid #000000;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 25%;
-}
-.service-icons{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 10px;
-}
-.service-title{
-    text-align: center;
-}
-.service-content{
-    padding-top: 10px;
-    text-align: justify;
-}
+/*//////// Sidebar Section \\\\\\\\*/
 
 
-@media screen and (max-width:768px){
-    .services-container{
-        flex-direction: column;
-    }
-    .service-panel{
-        width: 70%;
-    }
-}
+
+
 /*//////// Recent Posts Section \\\\\\\\*/
 .posts-container{
     display: flex;
@@ -263,6 +193,9 @@ nav{
     text-align: center;
     margin-top: 10px;
     margin-bottom: 15px;
+}
+.post-title a{
+    text-decoration: none;
 }
 .post-date{
     text-align: start;
