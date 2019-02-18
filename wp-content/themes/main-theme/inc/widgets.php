@@ -10,6 +10,33 @@
         }  
         //Handling the front-end display
         public function widget($args, $instance){
+            $total = absint($instance['total']);
+            $posts_args = array(
+                'post_type' => 'post',
+                'post_per_page' => $total,
+                'meta_key' => 'devdevil_post_views',
+                'orderby' => 'meta_value_num',
+                'order' => 'DESC'
+            );
+
+            $posts_query = new WP_Query($posts_args);
+
+            if($posts_query->have_posts()):
+                echo '<ul>';
+                while($posts_query->have_posts()):
+                    $posts_query->the_post();
+                    echo '<li>'.get_the_title().'</li>';
+                endwhile;
+                echo '</ul>';
+            endif;
+
+            echo $args['before_widget'];
+
+            if(!empty($instance['title'])):
+                echo $args['before_title'].apply_filters('widget_title', $instance['title']).$args['after_title'];
+            endif;
+
+            echo $args['after_widget'];
 
         }
         //Handling the back-end display
@@ -31,6 +58,14 @@
             $output .='</p>';
 
             echo $output;
+        }
+
+        public function update($new_instance, $old_instance){
+            $instance = array();
+            $instance['title'] = (!empty($new_instance['title']) ? strip_tags($new_instance['title']) : '');
+            $instance['total'] = (!empty($new_instance['total']) ? absint(strip_tags($new_instance['total'])) : 0);
+
+            return $instance;
         }
 
 
