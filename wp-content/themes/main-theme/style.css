@@ -33,15 +33,18 @@ Very Light Gray -> #FAF9FF
 .big-btn{
     padding: 20px 40px;;
 }
-
+body{
+    padding: 0 10%;
+}
 /* ///////// Navigation Menu Section \\\\\\\\\ */
 header{
     position: absolute;
     padding: 0 150px;
     width: 100%;
-    top: 30px;
+    top: 0;
     left: 0;
     background-color: #C7EFCF;
+
 }
 .logo{
     height: 50px;
@@ -95,7 +98,7 @@ nav{
 }
 
 
-@media screen and (max-width: 1024px){ 
+@media screen and (max-width: 990px){ 
     header{
         padding: 0 20px;
     }
@@ -120,7 +123,7 @@ nav{
     }
 }
 
-@keyframes navLinkFade{
+/* @keyframes navLinkFade{
     from{
         opacity: 0;
         transform: translateX(50px);
@@ -129,7 +132,7 @@ nav{
         opacity: 1;
         transform: translateX(0px);
     }
-}
+} */
 
 .toggle .line1{
     transform: rotate(-45deg) translate(-5px, 6px);
@@ -142,28 +145,26 @@ nav{
 }
 
 /*//////// Sidebar Section \\\\\\\\*/
-
+.sidebar{
+    
+}
 
 
 
 /*//////// Recent Posts Section \\\\\\\\*/
-.posts-container{
+#home-body{
     display: flex;
+}
+.posts-container{
+    /* display: flex;
     justify-content: space-around;
     align-items: stretch;
-    flex-wrap: wrap;
-    padding-left: 80px;
-    padding-right: 80px;
+    flex-wrap: wrap; */
+    padding: 0 80px;
 }
 .post-panel{
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    border: 1px solid rgb(155, 155, 136);
-    padding: 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    flex-basis: 35%;
+    border: 2px solid rgb(155, 155, 136);
+    margin: 20px 0;
     border-radius: 7px;
     transition: 0.3s ease-in;
 }
@@ -176,7 +177,10 @@ nav{
     border-radius: 7px 7px 0 0;    
 }
 .post-thumbnail img{
-    border-radius: 7px 7px 0 0;
+    border-radius: 4px 4px 0 0;
+}
+.post-body{
+    padding: 5px;
 }
 .post-title{
     text-align: center;
@@ -197,4 +201,13 @@ nav{
 .post-author{
     text-align: end;
     padding-right: 20px;
+}
+.post-author a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 990px){
+    #home-body{
+        flex-direction: column;
+    }
 }
