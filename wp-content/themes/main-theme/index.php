@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<div id="home-body">
+<div id="home-body clearfix">
     <div class="section posts">
         <h4 class="section-heading">Recent Blog Posts</h4>
         <div class="posts-container">
@@ -27,7 +27,7 @@
                                         echo wp_trim_words(get_the_content(), 20);
                                     ?>
                             </h4>
-                            <p class="post-date">Publised on <?php the_date(); ?></p>
+                            <p class="post-date">Published on <?php the_date(); ?></p>
                         </div>  
                     </div>
             <?php 

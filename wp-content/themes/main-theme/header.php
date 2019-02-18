@@ -11,7 +11,7 @@
 <body <?php body_class(); ?> >
 
 <!--Home page style-->
-<header>
+<header class="clearfix">
     <div class="logo">
         <a href="#">devDevil</a>
     </div>

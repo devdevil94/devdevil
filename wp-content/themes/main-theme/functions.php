@@ -46,4 +46,7 @@ add_action('widgets_init', 'devdevil_widgets_setup');
 add_action('after_setup_theme', 'devdevil_features_setup');
 add_action('wp_enqueue_scripts', 'load_custom_files');
 add_action('wp_enqueue_scripts', 'load_fontawesome');
+
+
+require get_template_directory().'/inc/widgets.php';
 ?>

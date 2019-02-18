@@ -27,12 +27,30 @@ Very Light Gray -> #FAF9FF
     font-size: 20px;
     text-align: center;
 }
-/* #home{
-    padding: 0 10%;
-} */
+.clearfix:after{
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix{
+    display: inline-block;
+
+}
+/*Hides from IE-mac\*/
+* html .clearfix{
+    height: 1%;
+}
+.clearfix{
+    display: block
+}
+/*End hide from IE-mac */
+
 .big-btn{
     padding: 20px 40px;;
 }
+
 body{
     padding: 0 10%;
 }
@@ -146,14 +164,19 @@ nav{
 
 /*//////// Sidebar Section \\\\\\\\*/
 .sidebar{
-    
+    width: 30%;
+    float: right;
 }
 
 
 
 /*//////// Recent Posts Section \\\\\\\\*/
 #home-body{
-    display: flex;
+    
+}
+.posts{
+    width: 66%;
+    float: left;
 }
 .posts-container{
     /* display: flex;
