@@ -33,14 +33,14 @@ Very Light Gray -> #FAF9FF
 .big-btn{
     padding: 20px 40px;;
 }
-body{
-    
-}
 
 /* ///////// Navigation Menu Section \\\\\\\\\ */
 header{
+    position: absolute;
     padding: 0 150px;
     width: 100%;
+    top: 30px;
+    left: 0;
     background-color: #C7EFCF;
 }
 .logo{
@@ -52,6 +52,7 @@ header{
 }
 .logo a{
     text-decoration: none;
+    color: #6242f4;
 }
 .logo a h4{
     color: #ffffff;
@@ -62,9 +63,6 @@ nav{
 }
 .nav-links{
     display: flex;
-    width: 35%;
-    justify-content: space-around;
-    text-align: center;
 }
 .link{
     list-style: none;
@@ -85,50 +83,41 @@ nav{
 .menu-bars{
     display: none;
     cursor: pointer;
+    float: right;
+    /* line-height: 50px; */
+    font-size: 24px;
+    padding: 4px 6px;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
 }
-.menu-bars div{
-    width: 25px;
-    height: 3px;
-    background-color: #ffffff;;
-    margin: 5px;
-    transition: all 0.3s ease;
+.fa-bars{
+    color: #ffffff;
 }
 
-/* @media screen and (max-width:1024px){
-    .nav-links{
-        width: 50%;
-    }
-} */
 
-@media screen and (max-width:768px){
-    body{
-        overflow-x: hidden;
+@media screen and (max-width: 1024px){ 
+    header{
+        padding: 0 20px;
     }
-    .nav-links{
+    nav{
         position: absolute;
-        right: 0;
-        top: 15vh;
-        height: 70vh;
-        background: #C7EFCF;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 40%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-        z-index: 2;
-    }
-    .link{
-        opacity: 0;
         width: 100%;
+        height: calc(47vh - 50px);
+        top: 50px;
+        left: -100%;
+        background-color: #C7EFCF;
+        transition: 0.5s;
+    }
+    nav.active{
+        left: 0;
+    }
+    .nav-links{
+       display: block;
+       text-align: center;
     }
     .menu-bars{
         display: block;
     }
-}
-
-.mobile-nav-active{
-    transform: translateX(0);
 }
 
 @keyframes navLinkFade{

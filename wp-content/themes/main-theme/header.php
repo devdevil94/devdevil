@@ -13,9 +13,9 @@
 <!--Home page style-->
 <header>
     <div class="logo">
-        <a href="#"><h4>devDevil</h4></a>
+        <a href="#">devDevil</a>
     </div>
-    <nav>
+    <nav class="active">
         <ul class="nav-links">
             <li class="link"><a class="active" href="#">Home</a></li>
             <li class="link"><a href="#">Blog</a></li>
@@ -25,10 +25,7 @@
         </ul>
     </nav>
     <div class="menu-bars">
-            <!-- <i class="fa fa-bars"></i> -->
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+        <i class="fa fa-bars"></i>
     </div>
 
 </header>

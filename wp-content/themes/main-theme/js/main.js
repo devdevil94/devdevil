@@ -2,11 +2,11 @@
 
 function navSlide(){
     const menuBars = document.querySelector('.menu-bars');
-    menuBars.addEventListener('click', () => {
-        const nav = document.querySelector('.nav-links');
-        const navLinks = document.querySelectorAll('.nav-links li');
-        nav.classList.toggle('mobile-nav-active');
 
+    menuBars.addEventListener('click', () => {
+        const nav = document.querySelector('nav');
+        const navLinks = document.querySelectorAll('.nav-links li');
+    
         navLinks.forEach((link, index) => {
             if(link.style.animation)
                 link.style.animation = '';
