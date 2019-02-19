@@ -21,23 +21,25 @@
 
             $posts_query = new WP_Query($posts_args);
 
-            if($posts_query->have_posts()):
-                echo '<ul>';
-                while($posts_query->have_posts()):
-                    $posts_query->the_post();
-                    echo '<li>'.get_the_title().'</li>';
-                endwhile;
-                echo '</ul>';
-            endif;
-
             echo $args['before_widget'];
 
             if(!empty($instance['title'])):
                 echo $args['before_title'].apply_filters('widget_title', $instance['title']).$args['after_title'];
             endif;
 
-            echo $args['after_widget'];
+            if($posts_query->have_posts()):
+                echo '<div class="popular-posts-container">';
+                echo '<h3 class="popular-posts-heading">Popular Posts</h3>';
+                        while($posts_query->have_posts()):
+                            $posts_query->the_post();
+                            echo '<div class="popular-post-panel">';
+                                echo '<a href="'.get_the_permalink().'" class="popular-post-title">'.get_the_title().'</a>';
+                            echo '</div>';
+                        endwhile;
+                echo '</div>';
+            endif;
 
+            echo $args['after_widget'];
         }
         //Handling the back-end display
         public function form($instance){

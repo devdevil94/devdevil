@@ -24,8 +24,8 @@ Very Light Gray -> #FAF9FF
 }
 .section-heading{
     padding: 10px 0 10px 0;
-    font-size: 20px;
-    text-align: center;
+    font-size: 14px;
+    /* text-align: center; */
 }
 .clearfix:after{
     content: ".";
@@ -35,8 +35,7 @@ Very Light Gray -> #FAF9FF
     visibility: hidden;
 }
 .clearfix{
-    display: inline-block;
-
+    display: block;
 }
 /*Hides from IE-mac\*/
 * html .clearfix{
@@ -50,7 +49,10 @@ Very Light Gray -> #FAF9FF
 .big-btn{
     padding: 20px 40px;;
 }
-
+img{
+    max-width: 100%;
+    height: auto;
+}
 body{
     padding: 0 10%;
 }
@@ -164,32 +166,61 @@ nav{
 
 /*//////// Sidebar Section \\\\\\\\*/
 .sidebar{
-    width: 30%;
-    float: right;
+    flex: 2;
 }
-
-
-
-/*//////// Recent Posts Section \\\\\\\\*/
-#home-body{
+/* .sidebar-section-heading{
+    font-size: 14px;
+} */
+.popular-posts-container{
     
 }
+.popular-posts-heading{
+    padding-left: 5px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.popular-post-panel{
+    padding: 10px;
+    margin: 8px 0;
+    background-color: #C7EFCF;
+    border-radius: 3px;
+    transition: 0.2s ease-in;
+}
+.popular-post-panel:hover{
+    transform: scale(1.07);
+}
+.popular-post-title{
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    color:#6242f4;
+}
+
+/*//////// Recent Posts Section \\\\\\\\*/
+#home-content{
+    display: flex;
+}
+.recent-posts-heading{
+    font-size: 14px;
+}
 .posts{
-    width: 66%;
-    float: left;
+    flex: 6;
 }
 .posts-container{
-    /* display: flex;
+    display: flex;
     justify-content: space-around;
-    align-items: stretch;
-    flex-wrap: wrap; */
-    padding: 0 80px;
+    flex-direction: column;
+    /* align-items: stretch; */
+    padding: 0 50px;
 }
 .post-panel{
+    /* display: flex;
+    flex-direction: column; */
     border: 2px solid rgb(155, 155, 136);
     margin: 20px 0;
     border-radius: 7px;
     transition: 0.3s ease-in;
+    width: 100%;
 }
 .post-panel:hover{
     opacity: 0.8;
@@ -197,11 +228,12 @@ nav{
 }
 .post-thumbnail{
     text-align: center;
-    border-radius: 7px 7px 0 0;    
+    border-radius: 7px 7px 0 0;
+    width: 100%;  
 }
-.post-thumbnail img{
+/* .post-thumbnail img{
     border-radius: 4px 4px 0 0;
-}
+} */
 .post-body{
     padding: 5px;
 }
