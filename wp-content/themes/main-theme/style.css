@@ -54,8 +54,9 @@ img{
     height: auto;
 }
 body{
-    padding: 0 10%;
+    padding: 0 15%;
 }
+
 /* ///////// Navigation Menu Section \\\\\\\\\ */
 header{
     position: absolute;
