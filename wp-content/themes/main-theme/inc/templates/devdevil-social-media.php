@@ -1,6 +1,6 @@
 
 
-<h1>devDevil Theme Options</h1>
+<h1>devDevil Social Media Options</h1>
 <?php settings_errors(); ?>
 <form method="post" action="options.php">
     <?php
