@@ -163,8 +163,10 @@ nav{
 .toggle .line3{
     transform: rotate(45deg) translate(-5px, -6px);
 }
+/*//////// Subscription Section \\\\\\\\*/
 
-/*//////// Sidebar Section \\\\\\\\*/
+
+/*//////// Popular Posts Section \\\\\\\\*/
 .sidebar{
     flex: 2;
 }
@@ -172,10 +174,11 @@ nav{
     font-size: 14px;
 } */
 .popular-posts-container{
+    padding-left: 8px;
     
 }
 .popular-posts-heading{
-    padding-left: 5px;
+
     font-size: 14px;
     margin-bottom: 20px;
 }
@@ -199,6 +202,7 @@ nav{
 /*//////// Recent Posts Section \\\\\\\\*/
 #home-content{
     display: flex;
+    
 }
 .recent-posts-heading{
     font-size: 14px;
@@ -262,7 +266,7 @@ nav{
 }
 
 @media screen and (max-width: 990px){
-    #home-body{
+    #home-content{
         flex-direction: column;
     }
 }

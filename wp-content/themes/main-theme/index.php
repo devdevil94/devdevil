@@ -30,6 +30,7 @@
                             <p class="post-date">Published on <?php the_date(); ?></p>
                         </div>  
                     </div>
+                    
             <?php 
                 }
                 ?>
