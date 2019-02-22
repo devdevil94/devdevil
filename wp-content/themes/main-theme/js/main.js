@@ -17,4 +17,24 @@ function navSlide(){
     //    menuBars.classList.toggle('toggle');
     });
 }
+(function($) {
+    window.fnames = new Array();
+    window.ftypes = new Array();
+    fnames[0]='EMAIL';
+    ftypes[0]='email';
+    fnames[1]='FNAME';
+    ftypes[1]='text';
+    fnames[2]='LNAME';
+    ftypes[2]='text';
+}(jQuery));
+
+var $mcj = jQuery.noConflict(true);
+
 navSlide();
+
+function subscribeBtnHover(){
+    var subscribeBtn = document.getElementById('mc-embedded-subscribe');
+    subscribeBtn.setAttribute('style', 'background-color: #FFFFFF');
+
+    // subscribeBtn.style.cssText = 'background-color: #FAF9FF';
+}

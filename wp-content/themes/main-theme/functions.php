@@ -1,5 +1,6 @@
 <?php
-require get_template_directory().'/inc/widgets.php';
+require get_template_directory().'/inc/popular-posts-widget.php';
+require get_template_directory().'/inc/signup-widget.php';
 require get_template_directory().'/inc/function-admin.php';
 
 function load_bootstrap(){
@@ -45,6 +46,12 @@ function devdevil_widgets_setup(){
 
 }
 
+// function load_mailchimp(){
+//     wp_enqueue_script('mailchimp-js','//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js', array( 'jquery' ), true);
+//     wp_enqueue_style('mailchimp-css', get_template_directory_uri().'/css/signup-form.css');
+
+// }
+// add_action('widgets_init', 'load_mailchimp');
 add_action('after_setup_theme', 'devdevil_features_setup');
 add_action('widgets_init', 'devdevil_widgets_setup');
 add_action('wp_enqueue_scripts', 'load_custom_files');
