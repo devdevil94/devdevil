@@ -8,7 +8,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?> >
 
 <!--Home page style-->
 <header class="clearfix">

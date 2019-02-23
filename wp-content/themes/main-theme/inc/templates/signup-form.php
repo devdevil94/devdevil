@@ -1,5 +1,5 @@
 <?php  
-wp_enqueue_style('mailchimp-css', get_template_directory_uri().'/css/signup-form.css'); 
+wp_enqueue_style('mailchimp-css', get_template_directory_uri().'/css/signup-form.css',array(), version_id(), 'all'); 
 ?>
 
 <!-- <style>
