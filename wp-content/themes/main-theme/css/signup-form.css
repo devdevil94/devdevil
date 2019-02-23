@@ -5,12 +5,35 @@
     clear:left;
     font:14px Helvetica,Arial,sans-serif;
 }
-#mc-embedded-subscribe:hover{
-    background-color: #FAF9FF;
-}
+
 #mc_embed_signup_scroll h2{
+    margin-bottom: 10px;
     font-size: 14px;
 }
-.button{
-    background-color: aqua;
+#mc-embedded-subscribe-form{
+    padding: 8px;
 }
+.indicates-required{
+    text-align: end;
+    margin-bottom: 20px;
+}
+.mc-field-group{
+    margin-bottom: 8px;
+}
+.mc-field-group input{
+    width: 100%;
+}
+span.asterisk{
+    color: red;
+}
+#mc-embedded-subscribe{
+    background-color: #6242f4;
+    color: #FAF9FF;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+#mc-embedded-subscribe:hover{
+    color: #6242f4;
+    background-color: #C7EFCF;
+}
+
