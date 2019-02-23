@@ -48,7 +48,7 @@ class Devdevil_Signup_Form extends WP_Widget{
         $instance = array();
         $instance['title'] = (!empty($new_instance['title']) ? strip_tags($new_instance['title']) : '');
         $instance['apiKey'] = (!empty($new_instance['apiKey']) ? strip_tags($new_instance['apiKey']) : 0);
-
+        //API key can be removed
         return $instance;
     }
 

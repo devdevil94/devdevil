@@ -31,10 +31,3 @@ function navSlide(){
 var $mcj = jQuery.noConflict(true);
 
 navSlide();
-
-function subscribeBtnHover(){
-    var subscribeBtn = document.getElementById('mc-embedded-subscribe');
-    subscribeBtn.setAttribute('style', 'background-color: #FFFFFF');
-
-    // subscribeBtn.style.cssText = 'background-color: #FAF9FF';
-}

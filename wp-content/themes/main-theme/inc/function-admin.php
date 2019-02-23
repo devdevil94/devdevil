@@ -34,25 +34,26 @@ function devdevil_custom_settings(){
     'devdevil_options', 'devdevil-general-options');
  
 
-    register_setting('devdevil-social-media', 'twitter_handler',
-    'devdevil_sanitize_twitter_handler');
+    register_setting('devdevil-social-media', 'twitter',
+    'devdevil_sanitize_twitter');
+    register_setting('devdevil-social-media', 'facebook');
+    register_setting('devdevil-social-media', 'google_plus');
+    register_setting('devdevil-social-media', 'github');
+
+
     add_settings_section('devdevil-social-media', 'Social Media Options',
     'devdevil_social_media_options', 'devdevil_options');
-    add_settings_field('sidebar-twitter', 'Twitter Handler', 'devdevil_twitter',
-    'devdevil_options', 'devdevil-social-media');
-
-
-    register_setting('devdevil-theme-support', 'post_formats',
-    'devdevil_post_formats_callback');
-    add_settings_section('devdevil-theme-options', 'Theme Options',
-    'devdevil_theme_options', 'devdevil_options');
-    add_settings_field('post-formats', 'Post Formats', 'devdevil_post_formats',
-    'devdevil_theme', 'devdevil-theme-options');
-}
-
-function devdevil_post_formats(){
     
+    add_settings_field('sidebar-twitter', 'Twitter', 'devdevil_twitter',
+    'devdevil_options', 'devdevil-social-media');
+    add_settings_field('sidebar-facebook', 'Facebook', 'devdevil_facebook',
+    'devdevil_options', 'devdevil-social-media');
+    add_settings_field('sidebar-google-plus', 'Google Plus', 'devdevil_google_plus',
+    'devdevil_options', 'devdevil-social-media');
+    add_settings_field('sidebar-github', 'Git Hub', 'devdevil_github',
+    'devdevil_options', 'devdevil-social-media');
 }
+
 
 function devdevil_theme_options(){
     echo 'Activate theme options.';
@@ -62,18 +63,34 @@ function devdevil_post_formats_callback($input){
     return $input;
 }
 
-function devdevil_sanitize_twitter_handler($input){
+function devdevil_sanitize_twitter($input){
     $output = sanitize_text_field($input);
     $output = str_replace('@', '', $output);
     return $output; //Always return, Never echo
 }
 
 function devdevil_twitter(){
-    $twitter = esc_attr(get_option('twitter_handler'));
+    $twitter = esc_attr(get_option('twitter'));
     //name sould be the $option_name of the registered setting
-    echo '<input type="text" name="twitter_handler" value="'.$twitter.'
-    "placeholder="Twitter Handler" />
+    echo '<input type="text" name="twitter" value="'.$twitter.'
+    "placeholder="Twitter" />
     <p class="description">Enter your twitter username without the \'@\' character</p>';
+}
+function devdevil_facebook(){
+    $facebook = esc_attr(get_option('facebook'));
+    echo '<input type="text" name="facebook" value="'.$facebook.'
+    "placeholder="Facebook" />';
+}
+function devdevil_google_plus(){
+    $google_plus = esc_attr(get_option('google_plus'));
+    echo '<input type="text" name="google_plus" value="'.$google_plus.'
+    "placeholder="Google+" />';
+}
+
+function devdevil_github(){
+    $github = esc_attr(get_option('github'));
+    echo '<input type="text" name="github" value="'.$github.'
+    "placeholder="GitHub" />';
 }
 
 function devdevil_full_name(){

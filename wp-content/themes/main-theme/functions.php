@@ -1,7 +1,4 @@
 <?php
-require get_template_directory().'/inc/popular-posts-widget.php';
-require get_template_directory().'/inc/signup-widget.php';
-require get_template_directory().'/inc/function-admin.php';
 
 function load_bootstrap(){
     // wp_enqueue_style('bootstrap-css','//stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css');
@@ -23,7 +20,7 @@ function version_id(){
 }
 
 function load_custom_files(){     
-    wp_enqueue_script('devdevil-mainjs', get_template_directory_uri().'/js/main.js', array(), version_id(), true);
+    wp_enqueue_script('devdevil-mainjs', get_template_directory_uri().'/js/main.js', array('jquery'), version_id(), true);
     wp_enqueue_style('main-stylesheet', get_stylesheet_uri(), array(), version_id(), 'all');
 }
 
@@ -46,15 +43,14 @@ function devdevil_widgets_setup(){
 
 }
 
-// function load_mailchimp(){
-//     wp_enqueue_script('mailchimp-js','//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js', array( 'jquery' ), true);
-//     wp_enqueue_style('mailchimp-css', get_template_directory_uri().'/css/signup-form.css');
 
-// }
-// add_action('widgets_init', 'load_mailchimp');
 add_action('after_setup_theme', 'devdevil_features_setup');
 add_action('widgets_init', 'devdevil_widgets_setup');
 add_action('wp_enqueue_scripts', 'load_custom_files');
 add_action('wp_enqueue_scripts', 'load_fontawesome');
+
+require get_template_directory().'/inc/popular-posts-widget.php';
+require get_template_directory().'/inc/signup-form-widget.php';
+require get_template_directory().'/inc/function-admin.php';
 
 ?>
