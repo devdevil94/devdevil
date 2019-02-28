@@ -1,5 +1,5 @@
 <?php
-wp_enqueue_style('mailchimp-css', 
+wp_enqueue_style('social-accounts-css', 
 get_template_directory_uri().'/css/social-media-accounts.css'
 ,array(), version_id(), 'all'); 
 ?>

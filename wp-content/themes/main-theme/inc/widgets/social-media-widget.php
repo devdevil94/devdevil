@@ -12,17 +12,6 @@ class Devdevil_Social_Media extends WP_Widget{
     }
 
     public function widget($args, $instance){
-        $total = absint($instance['total']);
-        $posts_args = array(
-            'post_type' => 'post',
-            'post_per_page' => $total,
-            'meta_key' => 'devdevil_post_views',
-            'orderby' => 'meta_value_num',
-            'order' => 'DESC'
-        );
-
-        $posts_query = new WP_Query($posts_args);
-
         echo $args['before_widget'];
 
         if(!empty($instance['title'])):
