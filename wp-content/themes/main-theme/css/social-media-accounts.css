@@ -1,8 +1,19 @@
 /*//////// Social Media Section \\\\\\\\*/
+#social-icons-container{
+     
+}
 .social-heading{
     font-size: 14px;
+    
 }
 .social-icons{
     display: flex;
     justify-content: space-around;
+    margin-top: 10px;
+}
+.fab{
+    color: #6242f4;
+}
+.fab:hover{
+    color: #3c2992;
 }
