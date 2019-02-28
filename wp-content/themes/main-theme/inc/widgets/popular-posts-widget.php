@@ -24,18 +24,24 @@ class Devdevil_Popular_Posts extends WP_Widget{
         echo $args['before_widget'];
 
         if(!empty($instance['title'])):
-            echo $args['before_title'].apply_filters('widget_title', $instance['title']).$args['after_title'];
+            echo $args['before_title'].apply_filters('widget_title',
+            $instance['title']).$args['after_title'];
         endif;
+
+        wp_enqueue_style('popular-posts-style', 
+        get_template_directory_uri().'/css/popular-posts.css'
+        ,array(), version_id(), 'all'); 
 
         if($posts_query->have_posts()):
             echo '<div class="popular-posts-container">';
             echo '<h3 class="popular-posts-heading">Popular Posts</h3>';
-                    while($posts_query->have_posts()):
-                        $posts_query->the_post();
-                        echo '<div class="popular-post-panel">';
-                            echo '<a href="'.get_the_permalink().'" class="popular-post-title">'.get_the_title().'</a>';
-                        echo '</div>';
-                    endwhile;
+                while($posts_query->have_posts()):
+                    $posts_query->the_post();
+                    echo '<div class="popular-post-panel">';
+                        echo '<a href="'.get_the_permalink().'
+                        " class="popular-post-title">'.get_the_title().'</a>';
+                    echo '</div>';
+                endwhile;
             echo '</div>';
         endif;
 

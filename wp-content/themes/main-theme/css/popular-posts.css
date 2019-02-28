@@ -1,0 +1,24 @@
+/*//////// Popular Posts Section \\\\\\\\*/
+.popular-posts-container{
+    padding-left: 18px;
+}
+.popular-posts-heading{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.popular-post-panel{
+    padding: 10px;
+    margin: 8px 0;
+    background-color: #C7EFCF;
+    border-radius: 3px;
+    transition: 0.2s ease-in;
+}
+.popular-post-panel:hover{
+    transform: scale(1.07);
+}
+.popular-post-title{
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    color:#6242f4;
+}
