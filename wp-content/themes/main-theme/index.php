@@ -26,9 +26,9 @@
                             <p class="post-author">By <a href="#"><?php the_author(); ?></a></p>          
                             <h4 class="post-excerpt">
                                 <?php
-                                    if(has_excerpt())
-                                        echo get_the_excerpt();
-                                    else
+                                    // if(has_excerpt())
+                                    //     echo get_the_excerpt();
+                                    // else
                                         echo wp_trim_words(get_the_content(), 20);
                                     ?>
                             </h4>
@@ -41,7 +41,7 @@
             ?>
         </div>
     </div>
-
+        
     <div class="section sidebar">
         <?php get_sidebar(); ?>
     </div>

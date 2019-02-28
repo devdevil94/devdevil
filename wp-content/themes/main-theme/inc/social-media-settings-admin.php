@@ -9,21 +9,47 @@ function devdevil_add_social_media_page(){
 function devdevil_social_media_settings(){
     register_setting('devdevil-social-media', 'twitter','devdevil_sanitize_twitter');
     register_setting('devdevil-social-media', 'facebook');
-    register_setting('devdevil-social-media', 'google_plus');
+    register_setting('devdevil-social-media', 'google');
     register_setting('devdevil-social-media', 'github');
 
+    // register_setting('devdevil-social-media', 'social_media_accounts',
+    // 'social_media_accounts_callback');
 
     add_settings_section('devdevil-social-media', 'Social Media Options',
     'devdevil_social_media_options', 'devdevil_social_media_options');
     
+    // add_settings_field('sidebar-social-media', 'Social Media Accounts',
+    // 'devdevil_social_media_accounts','devdevil_social_media_options','devdevil-social-media');
+
     add_settings_field('sidebar-twitter', 'Twitter', 'devdevil_twitter',
     'devdevil_social_media_options', 'devdevil-social-media');
     add_settings_field('sidebar-facebook', 'Facebook', 'devdevil_facebook',
     'devdevil_social_media_options', 'devdevil-social-media');
-    add_settings_field('sidebar-google-plus', 'Google Plus', 'devdevil_google_plus',
+    add_settings_field('sidebar-google-plus', 'Google', 'devdevil_google',
     'devdevil_social_media_options', 'devdevil-social-media');
-    add_settings_field('sidebar-github', 'Git Hub', 'devdevil_github',
+    add_settings_field('sidebar-github', 'GitHub', 'devdevil_github',
     'devdevil_social_media_options', 'devdevil-social-media');
+}
+
+function social_media_accounts_callback($input){
+    return $input;
+}
+
+function devdevil_social_media_accounts(){
+    $options = get_option('social_media_accounts');
+    $accounts = array('twitter', 'facebook', 'google', 'github');
+    $result = '<br>';
+    foreach($accounts as $account){
+        $checked = (@$options[$account] == 1 ? 'checked' : '');
+
+        $result .= '
+        <label>
+            <input type="checkbox" id="'.$account.'" name="social_media_accounts['.$account.']"
+            value="1"'.$checked.' />
+            '.$account.'
+        </label><br>';
+    }
+    echo $result;
 }
 
 function devdevil_sanitize_twitter($input){
@@ -36,28 +62,28 @@ function devdevil_twitter(){
     $twitter = esc_attr(get_option('twitter'));
     //name sould be the $option_name of the registered setting
     echo '<input type="text" name="twitter" value="'.$twitter.'
-    "placeholder="Twitter" />
+    " placeholder="Twitter" />
     <p class="description">Enter your twitter username without the \'@\' character</p>';
 }
 function devdevil_facebook(){
     $facebook = esc_attr(get_option('facebook'));
     echo '<input type="text" name="facebook" value="'.$facebook.'
-    "placeholder="Facebook" />';
+    " placeholder="Facebook" />';
 }
-function devdevil_google_plus(){
-    $google_plus = esc_attr(get_option('google_plus'));
-    echo '<input type="text" name="google_plus" value="'.$google_plus.'
-    "placeholder="Google+" />';
+function devdevil_google(){
+    $google = esc_attr(get_option('google'));
+    echo '<input type="text" name="google" value="'.$google.'
+    " placeholder="Google+" />';
 }
 
 function devdevil_github(){
     $github = esc_attr(get_option('github'));
     echo '<input type="text" name="github" value="'.$github.'
-    "placeholder="GitHub" />';
+    " placeholder="GitHub" />';
 }
 
 function devdevil_create_social_media_page(){
-    require_once(get_template_directory().'/inc/templates/devdevil-social-media.php');
+    require_once(get_template_directory().'/inc/templates/devdevil-social-media-admin.php');
 }
 
 function devdevil_social_media_options(){

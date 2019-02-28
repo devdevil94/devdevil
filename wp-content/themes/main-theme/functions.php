@@ -14,8 +14,8 @@ function load_fontawesome(){
 
 define('VERSION', '1.0');
 function version_id(){
-    if(WP_DEBUG)
-        return microtime();
+    if(WP_DEBUG) return microtime();
+
     return VERSION;
 }
 
@@ -51,6 +51,7 @@ add_action('wp_enqueue_scripts', 'load_fontawesome');
 
 require get_template_directory().'/inc/widgets/popular-posts-widget.php';
 require get_template_directory().'/inc/widgets/signup-form-widget.php';
+require get_template_directory().'/inc/widgets/social-media-widget.php';
 require get_template_directory().'/inc/general-settings-admin.php';
 require get_template_directory().'/inc/social-media-settings-admin.php';
 

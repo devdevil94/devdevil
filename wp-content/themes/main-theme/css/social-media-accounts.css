@@ -1,0 +1,8 @@
+/*//////// Social Media Section \\\\\\\\*/
+.social-heading{
+    font-size: 14px;
+}
+.social-icons{
+    display: flex;
+    justify-content: space-between;
+}

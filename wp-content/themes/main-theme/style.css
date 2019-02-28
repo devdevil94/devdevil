@@ -175,7 +175,7 @@ nav{
     font-size: 14px;
 } */
 .popular-posts-container{
-    padding-left: 8px;
+    padding-left: 18px;
     
 }
 .popular-posts-heading{
@@ -273,4 +273,3 @@ nav{
         flex-direction: column;
     }
 }
-
