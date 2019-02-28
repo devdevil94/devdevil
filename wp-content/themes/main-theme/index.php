@@ -16,14 +16,18 @@
                     $homePostsQuery->the_post();
             ?>
                     <div class="post-panel">
-                        <div class="post-thumbnail"><?php the_post_thumbnail('home-post-thumbnail'); ?></div>
+                        <div class="post-thumbnail">
+                            <?php the_post_thumbnail('home-post-thumbnail'); ?>
+                        </div>
                         <div class="post-body">
                             <h3 class="post-title">
                                 <a href="<?php the_permalink(); ?>">
                                     <?php the_title(); ?>
                                 </a>
                             </h3>
-                            <p class="post-author">By <a href="#"><?php the_author(); ?></a></p>          
+                            <p class="post-author">
+                                By <a href="#"><?php the_author(); ?></a>
+                            </p>          
                             <h4 class="post-excerpt">
                                 <?php
                                     // if(has_excerpt())

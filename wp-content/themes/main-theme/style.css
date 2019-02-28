@@ -192,6 +192,7 @@ nav{
 }
 .post-panel{
     /* border: 2px solid rgb(155, 155, 136); */
+    display: inline-block;    
     margin: 20px 0;
     border-radius: 7px;
     transition: 0.3s ease-in;
@@ -246,4 +247,11 @@ nav{
     #home-content{
         flex-direction: column;
     }
+}
+
+.footer-container{
+    display: flex;
+}
+#contact{
+    background-color: #06040f;
 }
