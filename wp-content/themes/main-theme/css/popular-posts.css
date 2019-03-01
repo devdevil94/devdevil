@@ -1,6 +1,9 @@
 /*//////// Popular Posts Section \\\\\\\\*/
 .popular-posts-container{
-    padding-left: 18px;
+    background-color: #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
 }
 .popular-posts-heading{
     font-size: 14px;

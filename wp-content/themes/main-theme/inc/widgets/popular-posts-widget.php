@@ -30,7 +30,7 @@ class Devdevil_Popular_Posts extends WP_Widget{
 
         wp_enqueue_style('popular-posts-style', 
         get_template_directory_uri().'/css/popular-posts.css',
-        array(), version_id(), 'all'); 
+        array(), microtime(), 'all'); 
 
         if($posts_query->have_posts()):
             echo '<div class="popular-posts-container">';
