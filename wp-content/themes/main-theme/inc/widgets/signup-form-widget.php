@@ -5,7 +5,7 @@ class Devdevil_Signup_Form extends WP_Widget{
 
     public function __construct(){
         $widget_options = array(
-            'classname' => 'devdevil-signup-widget',
+            'classname' => 'devdevil-signup-form',
             'description' => 'Mailchimp Signup Form Widget'
         );
         parent::__construct('devdevil_signup_form', 'Signup Form', $widget_options);

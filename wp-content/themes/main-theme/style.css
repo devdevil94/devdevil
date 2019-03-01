@@ -263,7 +263,8 @@ nav{
 
 .footer-container{
     display: flex;
+    justify-content: space-around;
 }
 #contact{
-    background-color: #6242f4;
+    
 }

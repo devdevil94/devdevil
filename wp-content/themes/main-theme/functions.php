@@ -1,8 +1,13 @@
 <?php
+wp_enqueue_style('widgets-style', 
+get_template_directory_uri().'/css/widgets-style.css',
+array(), microtime(), 'all'); 
 
 require get_template_directory().'/inc/widgets/popular-posts-widget.php';
 require get_template_directory().'/inc/widgets/signup-form-widget.php';
 require get_template_directory().'/inc/widgets/social-media-widget.php';
+require get_template_directory().'/inc/widgets/advertisement-area-widget.php';
+
 require get_template_directory().'/inc/general-settings-admin.php';
 require get_template_directory().'/inc/social-media-settings-admin.php';
 
@@ -44,7 +49,7 @@ function devdevil_widgets_setup(){
         'id' => 'sidebar-right',
         'class' => 'custom',
         'description' => 'Right Sidebar',
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s widget-devdevil-sidebar">',
         'after_widget' => '</aside>',
         'before_title' => '<h1 class="widget-title">',
         'after_title' => '</h1>'

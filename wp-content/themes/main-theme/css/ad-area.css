@@ -1,0 +1,16 @@
+
+.ad-container{
+    height: 300px;
+    text-align: center;
+    background-color: #fff;
+    display: table;
+    width: 100%;
+    padding: 10px;
+}
+.ad-area{
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #FAF9FF;
+
+    color: rgb(156, 156, 156);
+}

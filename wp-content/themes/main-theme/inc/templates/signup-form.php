@@ -31,8 +31,8 @@ wp_enqueue_style('mailchimp-css', get_template_directory_uri().'/css/signup-form
                 <div id="mce-error-response" class="response" style="display: none;"></div>
                 <div id="mce-success-response" class="response" style="display: none;"></div>
             </div>
-<!-- real people should not fill this in and expect good things - 
-do not remove this or risk form bot signups-->
+            <!-- real people should not fill this in and expect good things - 
+            do not remove this or risk form bot signups-->
             <div style="position: absolute; left: -5000px;" aria-hidden="true">
                 <input tabindex="-1" name="b_a935696707051141c0f557e8f_a076571c2f"
                 type="text" value="" />
