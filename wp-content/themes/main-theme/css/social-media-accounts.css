@@ -1,10 +1,15 @@
 /*//////// Social Media Section \\\\\\\\*/
 #social-icons-container{
-    padding-left: 18px;
+    background-color: #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 .social-heading{
     font-size: 14px;
-    
+    padding-left: 10px;
+    margin-bottom: 20px;
 }
 .social-icons{
     display: flex;

@@ -17,7 +17,7 @@
             ?>
                     <div class="post-panel">
                         <div class="post-thumbnail">
-                            <?php the_post_thumbnail('home-post-thumbnail'); ?>
+                            <?php the_post_thumbnail(); ?>
                         </div>
                         <div class="post-body">
                             <h3 class="post-title">
@@ -36,14 +36,14 @@
                                         echo wp_trim_words(get_the_content(), 20);
                                     ?>
                             </h4>
-                            <p class="post-date">Published on <?php the_date(); ?></p>
+                            <p class="post-date"><?php the_date(); ?></p>
                         </div>  
-                    </div>
-                    
+                    </div>       
             <?php 
                 }
             ?>
         </div>
+        <div class="view-posts"><a class="big-btn" href="#">View All Posts</a></div>        
     </div>
         
     <div class="section sidebar">

@@ -21,6 +21,7 @@ Very Light Gray -> #FAF9FF
 }
 .section{
     padding: 50px 0;
+    
 }
 .section-heading{
     padding: 10px 0 10px 0;
@@ -42,7 +43,7 @@ Very Light Gray -> #FAF9FF
     height: 1%;
 }
 .clearfix{
-    display: block
+    display: block;
 }
 /*End hide from IE-mac */
 
@@ -55,6 +56,7 @@ img{
 }
 body{
     padding: 0 15%;
+    background-color: #FAF9FF;
 }
 
 /* ///////// Navigation Menu Section \\\\\\\\\ */
@@ -176,7 +178,6 @@ nav{
 /*//////// Recent Posts Section \\\\\\\\*/
 #home-content{
     display: flex;
-    
 }
 .recent-posts-heading{
     font-size: 14px;
@@ -249,9 +250,20 @@ nav{
     }
 }
 
+.view-posts{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.view-posts a{
+    text-decoration: none;
+    background-color: #6242f4;
+    color: #FFFFFF;
+}
+
 .footer-container{
     display: flex;
 }
 #contact{
-    background-color: #06040f;
+    background-color: #6242f4;
 }
