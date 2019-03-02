@@ -14,9 +14,9 @@
     justify-content: space-around;
     margin-top: 10px;
 }
-.fab{
+.fab, .fa{
     color: #6242f4;
 }
-.fab:hover{
+.fab:hover, .fa:hover{
     color: #3c2992;
 }
