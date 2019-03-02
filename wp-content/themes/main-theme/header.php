@@ -10,6 +10,8 @@
 </head>
 
 <!--Home page style-->
+
+<body <?php body_class(); ?> >
 <header class="clearfix">
     <div class="logo">
         <a href="#">devDevil</a>

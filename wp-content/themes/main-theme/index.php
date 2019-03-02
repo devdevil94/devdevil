@@ -2,7 +2,6 @@
 
 <?php get_header(); ?>
 
-<body <?php body_class(); ?> >
 <div id="home-content">
     <div class="section posts">
         <div class="posts-container">

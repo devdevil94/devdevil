@@ -48,26 +48,25 @@ Very Light Gray -> #FAF9FF
 /*End hide from IE-mac */
 
 .big-btn{
-    padding: 20px 40px;;
+    padding: 20px 40px;
+    border-radius: 5px;
 }
 img{
     max-width: 100%;
     height: auto;
 }
 body{
-    padding: 0 15%;
     background-color: #FAF9FF;
 }
 
 /* ///////// Navigation Menu Section \\\\\\\\\ */
 header{
-    position: absolute;
+    /* position: absolute; */
     padding: 0 150px;
     width: 100%;
     top: 0;
     left: 0;
     background-color: #C7EFCF;
-
 }
 .logo{
     height: 50px;
@@ -178,6 +177,8 @@ nav{
 /*//////// Recent Posts Section \\\\\\\\*/
 #home-content{
     display: flex;
+    padding: 0 15%;
+
 }
 .recent-posts-heading{
     font-size: 14px;
@@ -231,6 +232,8 @@ nav{
 .post-date{
     text-align: start;
     margin-top: 20px;
+    color: rgb(156, 156, 156);
+    font-weight: bold;
 }
 .post-excerpt{
     padding-top: 10px;
@@ -260,11 +263,42 @@ nav{
     background-color: #6242f4;
     color: #FFFFFF;
 }
-
+footer{
+    width: 100%;
+    background-color: rgb(56, 53, 53);
+    padding: 60px 0;
+}
 .footer-container{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    padding: 0 15%;
 }
-#contact{
-    
+
+#privacy a{
+    text-decoration: none;
+    color: #C7EFCF;
+}
+#privacy a:hover{
+    color: #6242f4;
+}
+
+#copyright p{
+    color: rgb(156, 156, 156);
+}
+#copyright p a{
+    text-decoration: none; 
+    color: rgb(156, 156, 156);
+}
+#copyright p a:hover{
+    color: #6242f4;
+}
+
+@media screen and (max-width: 990px){
+    .footer-container{
+        flex-direction: column;
+    }
+    #privacy{
+        margin-bottom: 15px;
+    }
 }

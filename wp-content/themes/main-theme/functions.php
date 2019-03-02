@@ -32,10 +32,10 @@ function version_id(){
 
 function load_custom_files(){ 
     wp_enqueue_style('main-stylesheet', get_stylesheet_uri(),
-    array(), version_id(), 'all');
+    array(), microtime(), 'all');
         
     wp_enqueue_script('devdevil-mainjs', get_template_directory_uri().'/js/main.js',
-    array('jquery'), version_id(), true);
+    array('jquery'), microtime(), true);
 }
 
 function devdevil_features_setup(){
