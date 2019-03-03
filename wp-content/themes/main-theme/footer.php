@@ -1,8 +1,4 @@
 
-    <div class="section sidebar">
-        <?php get_sidebar(); ?>
-    </div>
-</div>
 
 <footer>
     <div class="footer-container">

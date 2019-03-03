@@ -197,6 +197,7 @@ nav{
     justify-content: space-around;
     flex-direction: column;
     padding: 0 50px;
+    background-color: #fff;
 }
 .post-panel{
     /* border: 2px solid rgb(155, 155, 136); */
@@ -316,21 +317,30 @@ footer{
 
 #post-body{
     display: flex;
-    padding: 0 12%;
+    padding: 50px 12%;
 }
 .single-post-container{
     flex: 6;
-    padding: 15px;
+    padding: 15px 25px;
     margin-right: 20px;
     background-color: #fff;
     margin-top: 50px 0;
 }
-
+.single-post-title{
+    margin-bottom: 20px;
+}
+.single-post-content{
+    text-align: justify;
+}
 
 
 
 @media screen and (max-width: 990px){
     #post-body{
         flex-direction: column;
+    }
+    .single-post-container{
+        margin-right: 0;
+        margin-bottom: 30px;
     }
 }

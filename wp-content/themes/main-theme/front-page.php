@@ -10,7 +10,6 @@
                 $homePostsQuery = new WP_Query(array(
                     'posts_per_page' => 4
                 ));
-
                 while($homePostsQuery->have_posts()){
                     $homePostsQuery->the_post();
             ?>
@@ -47,6 +46,9 @@
         <div class="view-posts"><a class="big-btn" href="#">View All Posts</a></div>        
     </div>
         
-    
+    <div class="section sidebar">
+        <?php get_sidebar(); ?>
+    </div>
+</div>
 
 <?php get_footer(); ?>

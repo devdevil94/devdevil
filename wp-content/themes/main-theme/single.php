@@ -8,14 +8,16 @@
 ?>
     <div id="post-body">
         <div class="single-post-container">
-            <h4 class="single-post-title"><?php the_title(); ?></h4>
+            <h2 class="single-post-title"><?php the_title(); ?></h2>
             <p class="single-post-content"><?php the_content(); ?></p>
-        </div>
-        
+        </div>     
 <?php       
     }
 ?>
-
+        <div class="sidebar">
+            <?php get_sidebar(); ?>
+        </div>
+    </div>
 
 
 
