@@ -124,7 +124,7 @@ nav{
     /* line-height: 50px; */
     font-size: 24px;
     padding: 4px 6px;
-    border: 1px solid #ffffff;
+    border: 1px solid #6242f4;
     border-radius: 3px;
 }
 .fa-bars{
@@ -142,7 +142,7 @@ nav{
         height: calc(47vh - 50px);
         top: 50px;
         left: -100%;
-        background-color: #C7EFCF;
+        background-color: #FFFFFF;
         transition: 0.5s;
     }
     nav.active{
@@ -154,6 +154,7 @@ nav{
     }
     .menu-bars{
         display: block;
+        border: 1px solid #6242f4;
     }
 }
 
@@ -218,7 +219,8 @@ nav{
 }
 .post-thumbnail{
     text-align: center;
-    width: auto;  
+    width: auto;
+    border: 4px solid #C7EFCF;
 }
 
 .post-body{
@@ -252,8 +254,6 @@ nav{
 .post-author{
     text-align: end;
     padding-right: 20px;
-}
-.post-author a{
 }
 
 @media screen and (max-width: 990px){
