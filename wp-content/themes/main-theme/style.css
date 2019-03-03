@@ -56,6 +56,9 @@ img{
     max-width: 100%;
     height: auto;
 }
+a{
+    text-decoration: none;
+}
 body{
     background-color: #FAF9FF;
 }
@@ -84,7 +87,6 @@ header{
     float: left;
 }
 .logo a{
-    text-decoration: none;
     color: #6242f4;
 }
 .logo a h4{
@@ -104,7 +106,6 @@ nav{
     display: block;
     color: #000000;
     font-weight: bold;
-    text-decoration: none;
     padding: 0 20px;
     line-height: 50px;
 }
@@ -231,7 +232,6 @@ nav{
     margin-bottom: 15px;
 }
 .post-title a{
-    text-decoration: none;
     color: #6242f4;
 }
 .post-title a:hover{
@@ -254,7 +254,6 @@ nav{
     padding-right: 20px;
 }
 .post-author a{
-    text-decoration: none;
 }
 
 @media screen and (max-width: 990px){
@@ -276,7 +275,6 @@ nav{
 }
 
 .view-posts a{
-    text-decoration: none;
     background-color: #6242f4;
     color: #FFFFFF;
     display: inline-block;
@@ -297,7 +295,6 @@ footer{
 }
 
 #privacy a{
-    text-decoration: none;
     color: #C7EFCF;
 }
 #privacy a:hover{
@@ -307,8 +304,7 @@ footer{
 #copyright p{
     color: rgb(156, 156, 156);
 }
-#copyright p a{
-    text-decoration: none; 
+#copyright p a{ 
     color: rgb(156, 156, 156);
 }
 #copyright p a:hover{
@@ -324,11 +320,13 @@ footer{
     }
 }
 
-#single-post-body{
+#single-post-body,
+#single-page-body{
     display: flex;
     padding: 50px 12%;
 }
-.single-post-container{
+.single-post-container,
+.single-page-container{
     flex: 6;
     padding: 15px 25px;
     margin-right: 25px;
@@ -338,7 +336,9 @@ footer{
     0 4px 8px 0 rgba(0,0,0,0.2),
     0 6px 20px 0 rgba(0,0,0,0.19);
 }
-.single-post-title{
+.single-post-title,
+.single-page-title{
+    font-size: 1.8rem; 
     margin-bottom: 20px;
     text-align: justify;
 }
@@ -347,20 +347,20 @@ footer{
     color: rgb(156, 156, 156);
 }
 .single-post-info a{
-    text-decoration: none;
     color: #6242f4;
 }
-.single-post-content{
+.single-post-content,
+.single-page-content{
     text-align: justify;
 }
 
-
-
 @media screen and (max-width: 990px){
-    #post-body{
+    #single-post-body,
+    #single-page-body{
         flex-direction: column;
     }
-    .single-post-container{
+    .single-post-container,
+    .single-page-container{
         margin-right: 0;
         margin-bottom: 30px;
     }
