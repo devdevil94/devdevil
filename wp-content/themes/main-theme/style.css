@@ -205,9 +205,7 @@ nav{
     0 4px 8px 0 rgba(0,0,0,0.2),
     0 6px 20px 0 rgba(0,0,0,0.19);
 }
-.post-panel{
-    /* border: 1px solid rgb(155, 155, 136); */
-    display: inline-block;    
+.post-panel{   
     margin: 20px 0;
     border-radius: 0 0 9px 9px;
     transition: 0.3s ease-in;
@@ -263,6 +261,12 @@ nav{
     #home-content{
         flex-direction: column;
         padding: 0 5%;
+    }
+    .posts-container{
+        margin-right: 0;
+    }
+    .post-panel{
+        width: 95%;
     }
 }
 
@@ -336,6 +340,15 @@ footer{
 }
 .single-post-title{
     margin-bottom: 20px;
+    text-align: justify;
+}
+.single-post-info{
+    margin-bottom: 15px;
+    color: rgb(156, 156, 156);
+}
+.single-post-info a{
+    text-decoration: none;
+    color: #6242f4;
 }
 .single-post-content{
     text-align: justify;
