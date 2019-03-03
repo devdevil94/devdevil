@@ -16,7 +16,9 @@
             ?>
                     <div class="post-panel">
                         <div class="post-thumbnail">
-                            <?php the_post_thumbnail(); ?>
+                            <a href="<?php the_permalink(); ?>">
+                                <?php the_post_thumbnail(); ?>
+                            </a>
                         </div>
                         <div class="post-body">
                             <h3 class="post-title">
@@ -45,9 +47,6 @@
         <div class="view-posts"><a class="big-btn" href="#">View All Posts</a></div>        
     </div>
         
-    <div class="section sidebar">
-        <?php get_sidebar(); ?>
-    </div>
-</div>
+    
 
 <?php get_footer(); ?>

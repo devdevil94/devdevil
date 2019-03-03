@@ -23,3 +23,9 @@
     font-size: 14px;
     color:#6242f4;
 }
+
+@media screen and (max-width: 990px){
+    .popular-post-panel:hover{
+        transform: scale(1.02);
+    }
+}
