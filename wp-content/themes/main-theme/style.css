@@ -188,6 +188,7 @@ nav{
 /*//////// Recent Posts Section \\\\\\\\*/
 .recent-posts-heading{
     font-size: 14px;
+    align-self: flex-start;
 }
 .posts{
     flex: 6;
@@ -195,20 +196,22 @@ nav{
 .posts-container{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-direction: column;
-    padding: 0 50px;
+    padding: 15px 25px;
     background-color: #fff;
-}
-.post-panel{
-    /* border: 2px solid rgb(155, 155, 136); */
-    display: inline-block;    
-    margin: 20px 0;
-    border-radius: 7px;
-    transition: 0.3s ease-in;
-    width: 100%;
+    margin-right: 25px;
     box-shadow:
     0 4px 8px 0 rgba(0,0,0,0.2),
     0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.post-panel{
+    /* border: 1px solid rgb(155, 155, 136); */
+    display: inline-block;    
+    margin: 20px 0;
+    border-radius: 0 0 9px 9px;
+    transition: 0.3s ease-in;
+    width: 80%;
 }
 .post-panel:hover{
     opacity: 0.8;
@@ -216,16 +219,13 @@ nav{
 }
 .post-thumbnail{
     text-align: center;
-    border-radius: 7px 7px 0 0;
-    width: 100%;  
+    width: auto;  
 }
-/* .post-thumbnail img{
-    border-radius: 4px 4px 0 0;
-} */
+
 .post-body{
     padding: 5px;
     background-color: #C7EFCF;
-
+    border-radius: 0 0 7px 7px;
 }
 .post-title{
     text-align: center;
@@ -245,9 +245,10 @@ nav{
     margin-top: 20px;
     color: rgb(156, 156, 156);
     font-weight: bold;
+    padding-left: 5px;
 }
 .post-excerpt{
-    padding-top: 10px;
+    padding: 10px 20px 10px 20px;
     text-align: justify;
 }
 .post-author{
@@ -274,6 +275,10 @@ nav{
     text-decoration: none;
     background-color: #6242f4;
     color: #FFFFFF;
+    display: inline-block;
+}
+.view-posts a:hover{
+    background-color: #3c2896;
 }
 footer{
     width: 100%;
@@ -315,16 +320,19 @@ footer{
     }
 }
 
-#post-body{
+#single-post-body{
     display: flex;
     padding: 50px 12%;
 }
 .single-post-container{
     flex: 6;
     padding: 15px 25px;
-    margin-right: 20px;
+    margin-right: 25px;
     background-color: #fff;
     margin-top: 50px 0;
+    box-shadow:
+    0 4px 8px 0 rgba(0,0,0,0.2),
+    0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .single-post-title{
     margin-bottom: 20px;
