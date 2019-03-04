@@ -9,10 +9,14 @@
     <div id="single-post-body">
         <div class="single-post-container">
             <h2 class="single-post-title"><?php the_title(); ?></h2>
-            <p class="single-post-info">
-                Posted on <?php the_date(); ?>
-                by <a href="#"><?php the_author(); ?></a>
-            </p>
+            <div class="single-post-info">
+                <span class="sinple-post-date">
+                    <?php the_date(); ?>
+                </span>
+                <span class="single-post-author">
+                    by <a href="#"><?php the_author(); ?></a>
+                </span>
+            </div>
             <div class="single-post-content"><?php the_content(); ?></div>
         </div>     
 <?php       

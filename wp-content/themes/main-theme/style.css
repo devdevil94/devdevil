@@ -301,7 +301,7 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 30%;
+    width: 12%;
 }
 .footer-container div{
     margin: 5px 0;
@@ -363,10 +363,24 @@ footer{
 }
 .single-post-info{
     margin-bottom: 15px;
-    color: rgb(156, 156, 156);
 }
-.single-post-info a{
+.single-post-author{
+    padding: 3px 7px 3px 3px;
+    border-radius: 0 4px 4px 0;
+}
+.single-post-author,
+.single-post-author a{
     color: #6242f4;
+    background-color: #C7EFCF;
+}
+.single-post-author a:hover{
+    color: rgb(56, 53, 53);
+}
+.sinple-post-date{
+    background-color: #6242f4;
+    padding: 3px 0 3px 7px;
+    border-radius: 4px 0 0 4px;
+    color: #C7EFCF;
 }
 .single-post-content,
 .single-page-content{

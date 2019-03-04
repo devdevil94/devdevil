@@ -4,7 +4,7 @@
     <div class="footer-container">
         <div class="footer-contacts">
             <a href="#"><div class="fab fa-github fa-2x"></div></a>
-            <a href="#"><div class="fab fa-linkedin fa-2x"></div></a>
+            <!-- <a href="#"><div class="fab fa-linkedin fa-2x"></div></a> -->
             <a href="mailto:devdevilstudio@gmail.com">
                 <div class="fa fa-envelope fa-2x"></div>
             </a>
