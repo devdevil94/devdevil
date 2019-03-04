@@ -3,8 +3,8 @@
 <?php get_header(); ?>
 
 <div id="home-content">
-    <div class="section posts">
-        <div class="posts-container">
+    <div class="section recent-posts">
+        <div class="recent-posts-container">
             <h3 class="recent-posts-heading">Recent Blog Posts</h3>
             <?php 
                 $homePostsQuery = new WP_Query(array(
@@ -13,22 +13,22 @@
                 while($homePostsQuery->have_posts()){
                     $homePostsQuery->the_post();
             ?>
-                    <div class="post-panel">
-                        <div class="post-thumbnail">
+                    <div class="recent-post-panel">
+                        <div class="recent-post-thumbnail">
                             <a href="<?php the_permalink(); ?>">
                                 <?php the_post_thumbnail(); ?>
                             </a>
                         </div>
-                        <div class="post-body">
-                            <h3 class="post-title">
+                        <div class="recent-post-body">
+                            <h3 class="recent-post-title">
                                 <a href="<?php the_permalink(); ?>">
                                     <?php the_title(); ?>
                                 </a>
                             </h3>
-                            <p class="post-author">
+                            <p class="recent-post-author">
                                 By <a href="#"><?php the_author(); ?></a>
                             </p>          
-                            <h4 class="post-excerpt">
+                            <h4 class="recent-post-excerpt">
                                 <?php
                                     // if(has_excerpt())
                                     //     echo get_the_excerpt();
@@ -36,7 +36,7 @@
                                         echo wp_trim_words(get_the_content(), 20);
                                     ?>
                             </h4>
-                            <p class="post-date"><?php the_date(); ?></p>
+                            <p class="recent-post-date"><?php the_date(); ?></p>
                         </div>  
                     </div>       
             <?php 

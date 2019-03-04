@@ -33,7 +33,19 @@ function version_id(){
 function load_custom_files(){ 
     wp_enqueue_style('main-stylesheet', get_stylesheet_uri(),
     array(), microtime(), 'all');
-        
+    
+    wp_enqueue_style('single-post-style', 
+    get_template_directory_uri().'/css/single-post.css',
+    array(), microtime(), 'all');
+
+    wp_enqueue_style('footer-section-style', 
+    get_template_directory_uri().'/css/footer-section.css',
+    array(), microtime(), 'all');
+
+    wp_enqueue_style('recent-posts-section-style', 
+    get_template_directory_uri().'/css/recent-posts-section.css',
+    array(), microtime(), 'all');
+
     wp_enqueue_script('devdevil-mainjs', get_template_directory_uri().'/js/main.js',
     array('jquery'), microtime(), true);
 }

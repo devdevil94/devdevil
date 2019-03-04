@@ -1,0 +1,95 @@
+/*//////// Recent Posts Section \\\\\\\\*/
+.recent-posts-heading{
+    font-size: 14px;
+    align-self: flex-start;
+}
+.recent-posts{
+    flex: 6;
+}
+.recent-posts-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 25px;
+    background-color: #fff;
+    margin-right: 25px;
+    box-shadow:
+    0 4px 8px 0 rgba(0,0,0,0.2),
+    0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.recent-post-panel{   
+    margin: 20px 0;
+    border-radius: 0 0 9px 9px;
+    transition: 0.3s ease-in;
+    width: 80%;
+}
+.recent-post-panel:hover{
+    opacity: 0.8;
+    transform: scale(1.02);
+}
+.recent-post-thumbnail{
+    text-align: center;
+    width: auto;
+    border: 4px solid #C7EFCF;
+}
+
+.recent-post-body{
+    padding: 5px;
+    background-color: #C7EFCF;
+    border-radius: 0 0 7px 7px;
+}
+.recent-post-title{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.recent-post-title a{
+    color: #6242f4;
+}
+.recent-post-title a:hover{
+    color: #3c2896;
+
+}
+.recent-post-date{
+    text-align: start;
+    margin-top: 20px;
+    color: rgb(156, 156, 156);
+    font-weight: bold;
+    padding-left: 5px;
+}
+.recent-post-excerpt{
+    padding: 10px 20px 10px 20px;
+    text-align: justify;
+}
+.recent-post-author{
+    text-align: end;
+    padding-right: 20px;
+}
+
+@media screen and (max-width: 990px){
+    #home-content{
+        flex-direction: column;
+        padding: 0 5%;
+    }
+    .recent-posts-container{
+        margin-right: 0;
+    }
+    .recent-post-panel{
+        width: 95%;
+    }
+}
+
+.view-posts{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.view-posts a{
+    background-color: #6242f4;
+    color: #FFFFFF;
+    display: inline-block;
+}
+.view-posts a:hover{
+    background-color: #3c2896;
+}

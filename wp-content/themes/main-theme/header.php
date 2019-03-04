@@ -14,14 +14,14 @@
 <body <?php body_class(); ?> >
 <header class="clearfix">
     <div class="logo">
-        <a href="#">devDevil</a>
+        <a href="<?php echo site_url(); ?>">devDevil</a>
     </div>
     <nav class="active">
         <ul class="nav-links">
             <li class="link">
                 <a class="active" href="<?php echo site_url(); ?>">Home</a>
             </li>
-            <li class="link"><a href="#">Blog</a></li>
+            <li class="link"><a href="<?php echo site_url('/blog'); ?>">Blog</a></li>
             <li class="link"><a href="#">Projects</a></li>
             <li class="link">
                 <a href="<?php echo site_url('/about'); ?>">About</a>
