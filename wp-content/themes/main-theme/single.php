@@ -6,7 +6,7 @@
         store_post_views(get_the_ID()); 
 ?>
     <div id="single-post-body">
-        <div class="single-post-container">
+        <div class="section single-post-container">
             <h2 class="single-post-title"><?php the_title(); ?></h2>
             <div class="single-post-info">
                 <span class="sinple-post-date">
@@ -21,7 +21,7 @@
 <?php       
     }
 ?>
-        <div class="sidebar">
+        <div class="section sidebar">
             <?php get_sidebar(); ?>
         </div>
     </div>

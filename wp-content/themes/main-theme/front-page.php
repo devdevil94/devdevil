@@ -43,7 +43,11 @@
                 }
             ?>
         </div>
-        <div class="view-posts"><a class="big-btn" href="#">View All Posts</a></div>        
+        <div class="view-posts">
+            <a class="big-btn" href="<?php echo site_url('/blog'); ?>">
+                View All Posts
+            </a>
+        </div>        
     </div>
         
     <div class="section sidebar">
