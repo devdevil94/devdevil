@@ -8,7 +8,7 @@
             <h3 class="blog-posts-heading">Blog Posts</h3>
 <?php 
             $postsListQuery = new WP_Query(array(
-                'posts_per_page' => 4,
+                'posts_per_page' => 1,
                 'post_type' => 'post'
             ));
             while($postsListQuery->have_posts()){
@@ -26,20 +26,18 @@
                                 <?php the_title(); ?>
                             </a>
                         </h3>
-                        <p class="blog-post-author">
-                            By <a href="#"><?php the_author(); ?></a>
+                        <p class="blog-post-info">
+                            <?php the_date(); ?> By <a href="#"><?php the_author(); ?></a>
                         </p>          
                         <h4 class="blog-post-excerpt">
-<?php
-                            if(has_excerpt()) echo get_the_excerpt();
-                            else echo wp_trim_words(get_the_content(), 20);
-?>
+                            <?php echo wp_trim_words(get_the_content(), 20); ?>
                         </h4>
-                        <p class="blog-post-date"><?php the_date(); ?></p>
+                        
                     </div>  
                 </div>       
 <?php 
             }
+            echo paginate_links();
 ?>      
         </div>
     </div>

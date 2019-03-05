@@ -56,7 +56,7 @@ function load_custom_files(){
 
 function devdevil_features_setup(){
     add_theme_support( 'post-thumbnails' );
-    add_image_size( 'home-post-thumbnail', 550, 320, true);
+    add_image_size('blog-post-thumbnail', 550, 400, true);
 }
 
 function devdevil_widgets_setup(){

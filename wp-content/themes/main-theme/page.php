@@ -13,7 +13,7 @@
 <?php       
     }
 ?>
-        <div class="sidebar">
+        <div class="section sidebar">
             <?php get_sidebar(); ?>
         </div>
     </div>
