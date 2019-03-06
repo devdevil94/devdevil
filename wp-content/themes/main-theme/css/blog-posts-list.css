@@ -50,7 +50,7 @@
 .blog-post-info a:hover{
     color: #FAF9FF;
 }
-.blog-post-excerpt{}
+/* .blog-post-excerpt{} */
 
 
 @media screen and (max-width: 1326px){
@@ -69,7 +69,5 @@
     .blog-post-panel{
         flex-direction: column;
     }
-    .blog-post-info{
-        
-    }
+
 }
