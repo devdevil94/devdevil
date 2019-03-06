@@ -54,7 +54,9 @@ function load_custom_files(){
     array('jquery'), microtime(), true);
 }
 
-function devdevil_features_setup(){
+function devdevil_theme_support(){
+    add_theme_support('html5', array('comment-list', 'comment-form',
+    'search-form', 'gallery', 'caption'));
     add_theme_support( 'post-thumbnails' );
     add_image_size('blog-post-thumbnail', 550, 400, true);
 }
@@ -74,7 +76,7 @@ function devdevil_widgets_setup(){
 }
 
 
-add_action('after_setup_theme', 'devdevil_features_setup');
+add_action('after_setup_theme', 'devdevil_theme_support');
 add_action('widgets_init', 'devdevil_widgets_setup');
 add_action('wp_enqueue_scripts', 'load_custom_files');
 add_action('wp_enqueue_scripts', 'load_fontawesome');

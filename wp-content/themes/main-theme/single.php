@@ -17,6 +17,10 @@
                 </span>
             </div>
             <div class="single-post-content"><?php the_content(); ?></div>
+<?php
+            if(comments_open())
+                comments_template();
+?>
         </div>     
 <?php       
     }
