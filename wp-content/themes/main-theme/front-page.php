@@ -6,13 +6,13 @@
     <div class="section recent-posts">
         <div class="recent-posts-container">
             <h3 class="recent-posts-heading">Recent Blog Posts</h3>
-            <?php 
+<?php 
                 $homePostsQuery = new WP_Query(array(
                     'posts_per_page' => 4
                 ));
                 while($homePostsQuery->have_posts()){
                     $homePostsQuery->the_post();
-            ?>
+?>
                     <div class="recent-post-panel">
                         <div class="recent-post-thumbnail">
                             <a href="<?php the_permalink(); ?>">
@@ -39,9 +39,9 @@
                             <p class="recent-post-date"><?php the_date(); ?></p>
                         </div>  
                     </div>       
-            <?php 
+<?php 
                 }
-            ?>
+?>
         </div>
         <div class="view-posts">
             <a class="big-btn" href="<?php echo site_url('/blog'); ?>">

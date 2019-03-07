@@ -19,16 +19,30 @@
     <nav class="active">
         <ul class="nav-links">
             <li class="link">
-                <a class="active" href="<?php echo site_url(); ?>">Home</a>
-            </li>
-            <li class="link"><a href="<?php echo site_url('/blog'); ?>">Blog</a></li>
-            <li class="link">
-                <a href="<?php echo get_post_type_archive_link('project'); ?>">Projects</a>
+                <a href="<?php echo site_url(); ?>">
+                    Home
+                </a>
             </li>
             <li class="link">
-                <a href="<?php echo site_url('/about'); ?>">About</a>
+                <a href="<?php echo site_url('/blog'); ?>">
+                    Blog
+                </a>
             </li>
-            <li class="link"><a href="#">Contact</a></li>
+            <li class="link">
+                <a href="<?php echo get_post_type_archive_link('project'); ?>">
+                    Projects
+                </a>
+            </li>
+            <li class="link">
+                <a href="<?php echo site_url('/about'); ?>">
+                    About
+                </a>
+            </li>
+            <li class="link">
+                <a href="<?php echo site_url('/contact'); ?>">
+                    Contact
+                </a>
+            </li>
         </ul>
     </nav>
     <div class="menu-bars">
