@@ -12,7 +12,7 @@
 <!--Home page style-->
 
 <body <?php body_class(); ?> >
-<header class="clearfix">
+<header>
     <div class="logo">
         <a href="<?php echo site_url(); ?>">devDevil</a>
     </div>

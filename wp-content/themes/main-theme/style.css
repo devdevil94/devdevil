@@ -71,12 +71,11 @@ body{
 }
 /* ///////// Navigation Menu Section \\\\\\\\\ */
 header{
-    /* position: absolute; */
-    /* position: fixed; */
+    display: flex;
     padding: 0 150px;
     width: 100%;
-    top: 0;
-    left: 0;
+    justify-content: space-between;
+    align-items: center;
     background-color: #FFFFFF;
     border-bottom: 2px solid #6242f4;
 }
@@ -94,9 +93,7 @@ header{
     color: #ffffff;
     letter-spacing: 5px;
 }
-nav{
-    float: right;
-}
+
 .nav-links{
     display: flex;
 }
@@ -123,7 +120,7 @@ nav{
     cursor: pointer;
     float: right;
     font-size: 24px;
-    padding: 4px 6px;
+    padding: 2px 6px;
     border: 1px solid #6242f4;
     border-radius: 3px;
 }
@@ -132,15 +129,15 @@ nav{
 }
 
 
+
 @media screen and (max-width: 990px){ 
     header{
         padding: 0 20px;
     }
     nav{
         position: absolute;
-        width: 100%;
-        height: calc(47vh - 50px);
-        top: 50px;
+        width: 60%;
+        top: 84px;
         left: -100%;
         background-color: #FFFFFF;
         transition: 0.5s;
@@ -157,6 +154,11 @@ nav{
         border: 1px solid #6242f4;
     }
 }
+@media screen and (max-width: 783px){
+    nav{
+        top: 98px;
+    }
+}
 
 /* @keyframes navLinkFade{
     from{
@@ -168,16 +170,6 @@ nav{
         transform: translateX(0px);
     }
 } */
-
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-.toggle .line2{
-    opacity: 0;
-}
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px, -6px);
-}
 
 .sidebar{
     flex: 2;

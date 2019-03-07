@@ -33,12 +33,12 @@ if(post_password_required()) return;
             }
 ?>
             
-        <ol class="comments-list">
+        <div class="comments-list">
 <?php       
             wp_list_comments(array(
                 'walker' => null,
                 'max_depth' => '',
-                'style' => 'ol',
+                'style' => 'div',
                 'callback' => null,
                 'end-callback' => null,
                 'type' => 'all',
@@ -53,7 +53,7 @@ if(post_password_required()) return;
                 'echo' => true
             )); 
 ?>
-        </ol>
+        </div>
 <?php
         if(!comments_open() && get_comments_number()){
 ?>
