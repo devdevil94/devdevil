@@ -76,6 +76,7 @@
     #home-content{
         flex-direction: column;
         padding: 0 5%;
+        /* margin-top: 250px; */
     }
     .recent-posts-container{
         margin-right: 0;
