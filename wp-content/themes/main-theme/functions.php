@@ -50,6 +50,10 @@ function load_custom_files(){
     get_template_directory_uri().'/css/blog-posts-list.css',
     array(), microtime(), 'all');
 
+    wp_enqueue_style('projects-list-style', 
+    get_template_directory_uri().'/css/projects-list.css',
+    array(), microtime(), 'all');
+
     wp_enqueue_script('devdevil-mainjs', get_template_directory_uri().'/js/main.js',
     array('jquery'), microtime(), true);
 }

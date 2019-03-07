@@ -8,7 +8,7 @@
             <h3 class="blog-posts-heading">Blog Posts</h3>
 <?php 
             $postsListQuery = new WP_Query(array(
-                'posts_per_page' => 1,
+                'posts_per_page' => 4,
                 'post_type' => 'post'
             ));
             if($postsListQuery->have_posts()){

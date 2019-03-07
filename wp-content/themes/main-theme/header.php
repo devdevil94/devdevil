@@ -22,7 +22,9 @@
                 <a class="active" href="<?php echo site_url(); ?>">Home</a>
             </li>
             <li class="link"><a href="<?php echo site_url('/blog'); ?>">Blog</a></li>
-            <li class="link"><a href="#">Projects</a></li>
+            <li class="link">
+                <a href="<?php echo get_post_type_archive_link('project'); ?>">Projects</a>
+            </li>
             <li class="link">
                 <a href="<?php echo site_url('/about'); ?>">About</a>
             </li>

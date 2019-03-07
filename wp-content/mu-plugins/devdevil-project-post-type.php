@@ -9,7 +9,7 @@ function devdevil_project_post_type(){
         'singular_name' => 'Project'
     );
 
-    $supports = array('title', 'editor', 'excerpt', 'custom-fields');
+    $supports = array('title', 'editor', 'excerpt', 'custom-fields', 'thumbnail');
 
     register_post_type('project', array( 
         'has_archive' => true,
