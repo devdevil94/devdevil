@@ -6,10 +6,12 @@
         the_post();
 ?>
     <div id="single-page-body">
-        <div class="single-page-container">
-            <h2 class="single-page-title"><?php the_title(); ?></h2>
-            <div class="single-page-content"><?php the_content(); ?></div>
-        </div>     
+        <div class="section single-page"> 
+            <div class="single-page-container">
+                <h2 class="single-page-title"><?php the_title(); ?></h2>
+                <div class="single-page-content"><?php the_content(); ?></div>
+            </div>
+        </div>
 <?php       
     }
 ?>

@@ -1,6 +1,11 @@
 /*//////// Recent Posts Section \\\\\\\\*/
+#home-content{
+    display: flex;
+    padding: 50px 12%;
+
+}
 .recent-posts-heading{
-    font-size: 14px;
+    font-size: 18px;
     align-self: flex-start;
 }
 .recent-posts{

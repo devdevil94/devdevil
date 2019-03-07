@@ -23,7 +23,6 @@ Very Light Gray -> #FAF9FF
 
 .section{
     padding: 50px 0;
-    
 }
 .section-heading{
     padding: 10px 0 10px 0;
@@ -64,11 +63,6 @@ body{
     background-color: #FAF9FF;
 }
 
-#home-content{
-    display: flex;
-    padding: 0 12%;
-
-}
 /* ///////// Navigation Menu Section \\\\\\\\\ */
 header{
     display: flex;
