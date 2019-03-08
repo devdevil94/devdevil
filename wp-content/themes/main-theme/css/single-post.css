@@ -49,6 +49,10 @@
 .single-page-content{
     text-align: justify;
 }
+.single-post-pag{
+    display: flex;
+    justify-content: space-between;
+}
 
 @media screen and (max-width: 990px){
     #single-post-body,

@@ -11,3 +11,64 @@
     padding: 20px 0;
     background-color: #fff;
 }
+/* #respond { 
+    background: #fbfbfb;
+    padding:0 10px 0 10px;
+}
+      
+    /* Highlight active form field 
+      
+#respond input[type=text], textarea {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #DDDDDD;
+}
+       
+       
+#respond input[type=text]:focus,
+input[type=email]:focus, 
+input[type=url]:focus,
+textarea:focus{
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    margin: 5px 1px 3px 0px;
+    border: 2px solid rgba(81, 203, 238, 1);
+}
+#author, #email{ 
+    font-family: "Open Sans", "Droid Sans", Arial;
+    font-style:italic;
+    color:#1d1d1d; 
+    letter-spacing:.1em;
+} 
+      
+#url{ 
+    color: #1d1d1d;
+    font-family: "Luicida Console", "Courier New", "Courier", monospace;
+}
+#submit{
+    background-color:#44c767;
+    -moz-border-radius:28px;
+    -webkit-border-radius:28px;
+    border-radius:28px;
+    border:1px solid #18ab29;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:17px;
+    padding:16px 31px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+} 
+      
+#submit:hover {
+    background-color:#5cbf2a; 
+}
+#submit:active { 
+    position:relative;
+    top:1px;
+} */

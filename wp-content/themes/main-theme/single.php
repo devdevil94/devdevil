@@ -18,6 +18,14 @@
                     </span>
                 </div>
                 <div class="single-post-content"><?php the_content(); ?></div>
+                <div class="single-post-pag">
+                    <div class="prev">
+                        <?php previous_post_link('%link'); ?>
+                    </div>
+                    <div class="next">
+                        <?php next_post_link('%link'); ?>
+                    </div>
+                </div>
 <?php
                 // if(comments_open())
                 //     comments_template();

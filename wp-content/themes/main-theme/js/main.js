@@ -5,8 +5,8 @@ function navSlide(){
 
     menuBars.addEventListener('click', () => {
         const nav = document.querySelector('nav');
-        const navLinks = document.querySelectorAll('.nav-links li');
         nav.classList.toggle('active');
+
     //     navLinks.forEach((link, index) => {
     //         if(link.style.animation)
     //             link.style.animation = '';
