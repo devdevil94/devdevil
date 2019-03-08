@@ -15,9 +15,9 @@
     justify-content: space-around;
     margin-top: 10px;
 }
-.fab, .fa{
+.social-icons a .fab{
     color: #6242f4;
 }
-.fab:hover, .fa:hover{
+.social-icons a .fab:hover{
     color: #3c2992;
 }

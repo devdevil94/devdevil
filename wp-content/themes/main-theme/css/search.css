@@ -14,25 +14,30 @@
 .search-form-text{
     border: 2px solid #6242f4;
     border-radius: 3px;
-    padding: 3px 3px;
+    padding: 7px 4px;
     background-color: #FAF9FF;
+    margin: 0;
+    width: 65%;
 }
 .search-form-text:focus{
     background-color: #C7EFCF;
     color: #6242f4;
 }
 .search-btn{
+    margin: 0;
     background-color: #C7EFCF;
     border-radius: 3px;
-    padding: 3px 3px;
+    padding: 7px 4px;
     border: 2px solid #6242f4;
     font-weight: bold;
+    width: 27%;
 }
 .search-btn:hover{
     cursor: pointer;
-    color: #FAF9FF;
     background-color: #6242f4;
+    color: #FAF9FF;
 }
+
 
 
 @media screen and (max-width: 990px){

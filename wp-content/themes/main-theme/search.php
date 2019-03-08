@@ -9,9 +9,6 @@
                 Search results for: <?php echo get_search_query(); ?>
             </h3>
 <?php 
-            $postsListQuery = new WP_Query(array(
-                'posts_per_page' => -1,
-            ));
             if(have_posts()){
                 while(have_posts()){
                     the_post();
@@ -37,7 +34,7 @@
 ?>
                 <div class="blog-post-pag">
 <?php
-                    // echo paginate_links();
+                    echo paginate_links();
 // next_post_link('<span>Next</span><h3>%link</h3>', '%title', false);
 // previous_posts_link('<span>Prev</span><h3>%link</h3>', '%title', false);
 ?>
