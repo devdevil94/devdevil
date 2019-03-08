@@ -41,10 +41,9 @@
 ?>
                 <div class="blog-post-pag">
 <?php
-echo paginate_links();
-                    // next_post_link('<span>Next</span><h3>%link</h3>', '%title', false);
-                    // previous_posts_link('<span>Prev</span><h3>%link</h3>', '%title', false);
-                    
+                    echo paginate_links();
+// next_post_link('<span>Next</span><h3>%link</h3>', '%title', false);
+// previous_posts_link('<span>Prev</span><h3>%link</h3>', '%title', false);
 ?>
                 </div>
 <?php               

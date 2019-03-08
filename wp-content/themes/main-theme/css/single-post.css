@@ -48,10 +48,31 @@
 .single-post-content,
 .single-page-content{
     text-align: justify;
+    margin-bottom: 50px;
 }
 .single-post-pag{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+}
+.prev,
+.next{
+    background-color: #C7EFCF;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: rgb(56, 53, 53);
+}
+.prev a,
+.next a{
+    display: inline-block;
+    color: rgb(56, 53, 53);
+}
+/* .prev:hover,
+.next:hover, */
+.prev a:hover,
+.next a:hover{
+    color: #FAF9FF;
 }
 
 @media screen and (max-width: 990px){
