@@ -1,4 +1,25 @@
 
+#search-results-body{
+    display: flex;
+    padding: 50px 12%;
+}
+.search-results{
+    flex: 6;
+}
+.search-results-container{
+    flex: 6;
+    padding: 15px 25px;
+    margin-right: 25px;
+    background-color: #fff;
+    box-shadow:
+    0 4px 8px 0 rgba(0,0,0,0.2),
+    0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.search-results-heading{
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
 .search-form-container{
     background-color: #fff;
     padding: 10px;

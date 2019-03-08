@@ -2,10 +2,10 @@
 
 <?php get_header(); ?>
 
-<div id="blog-posts-body">
-    <div class="section blog-posts">
-        <div class="blog-posts-container">
-            <h3 class="blog-posts-heading">
+<div id="search-results-body">
+    <div class="section search-results">
+        <div class="search-results-container">
+            <h3 class="search-results-heading">
                 Search results for: <?php echo get_search_query(); ?>
             </h3>
 <?php 
