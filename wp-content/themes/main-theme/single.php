@@ -22,14 +22,18 @@
 <?php               
                     if(get_previous_post()){
 ?>
-                        <div class="prev"><?php previous_post_link('&laquo; %link'); ?></div>
+                        <div class="post-prev">
+                            <?php previous_post_link('&laquo; %link'); ?>
+                        </div>
 <?php
                     } 
 ?>
 <?php               
                     if(get_next_post()){
 ?>
-                        <div class="next"><?php next_post_link('%link &raquo;'); ?></div>
+                        <div class="post-next">
+                            <?php next_post_link('%link &raquo;'); ?>
+                        </div>
 <?php
                     } 
 ?>                           
