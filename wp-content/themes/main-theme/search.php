@@ -5,17 +5,16 @@
 <div id="blog-posts-body">
     <div class="section blog-posts">
         <div class="blog-posts-container">
-            <h3 class="blog-posts-heading">Results</h3>
-            <div class="results-search-form">
-                <?php get_search_form(); ?>
-            </div>
+            <h3 class="blog-posts-heading">
+                Search results for: <?php echo get_search_query(); ?>
+            </h3>
 <?php 
             $postsListQuery = new WP_Query(array(
-                'posts_per_page' => 1,
+                'posts_per_page' => -1,
             ));
-            if($postsListQuery->have_posts()){
-                while($postsListQuery->have_posts()){
-                    $postsListQuery->the_post();
+            if(have_posts()){
+                while(have_posts()){
+                    the_post();
 ?>
                     <div class="blog-post-panel">
                         <div class="blog-post-content">
@@ -44,6 +43,10 @@
 ?>
                 </div>
 <?php               
+            }else{
+?>
+                <p style="margin-bottom: 150px;">No results found</p>
+<?php
             }
 ?>          
         </div>

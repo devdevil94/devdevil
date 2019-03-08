@@ -1,0 +1,23 @@
+
+.search-form-container{
+    background-color: #fff;
+    padding: 10px;
+}
+.search-form-heading{
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.search-form-text{
+    border: 2px solid #6242f4;
+    border-radius: 3px;
+    padding: 3px 3px;
+    background-color: #FAF9FF;
+}
+.search-form-text:focus{
+    background-color: #C7EFCF;
+}
+.search-btn{
+    background-color: #C7EFCF;
+    padding: 3px 3px;
+    border: 2px solid #6242f4;
+}
