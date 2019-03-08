@@ -7,6 +7,10 @@
     font-size: 14px;
     margin-bottom: 15px;
 }
+.devdevil-search-form{
+    display: flex;
+    justify-content: space-between;
+}
 .search-form-text{
     border: 2px solid #6242f4;
     border-radius: 3px;
@@ -15,9 +19,24 @@
 }
 .search-form-text:focus{
     background-color: #C7EFCF;
+    color: #6242f4;
 }
 .search-btn{
     background-color: #C7EFCF;
+    border-radius: 3px;
     padding: 3px 3px;
     border: 2px solid #6242f4;
+    font-weight: bold;
+}
+.search-btn:hover{
+    cursor: pointer;
+    color: #FAF9FF;
+    background-color: #6242f4;
+}
+
+
+@media screen and (max-width: 990px){
+    .devdevil-search-form{
+        justify-content: space-around;
+    }
 }
