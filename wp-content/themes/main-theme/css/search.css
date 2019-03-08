@@ -37,11 +37,39 @@
     background-color: #6242f4;
     color: #FAF9FF;
 }
-
-
-
 @media screen and (max-width: 990px){
     .devdevil-search-form{
         justify-content: space-around;
     }
 }
+
+
+/* ///////// Search Results Page \\\\\\\\\ */
+.search-result-panel{
+    margin: 15px 0;
+    border-bottom: 3px solid #6242f4;
+}
+
+.search-result-content{
+    padding: 10px;
+}
+.search-result-title a{
+    color: #6242f4;
+}
+.search-result-title a:hover{
+    color: #C7EFCF;
+}
+.search-result-info{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.search-result-info,
+.search-result-info a{
+    color: rgb(56, 53, 53);
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.search-result-info a:hover{
+    color: #C7EFCF;
+}
+

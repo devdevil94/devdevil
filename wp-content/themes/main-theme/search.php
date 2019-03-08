@@ -13,20 +13,28 @@
                 while(have_posts()){
                     the_post();
 ?>
-                    <div class="blog-post-panel">
-                        <div class="blog-post-content">
-                            <h3 class="blog-post-title">
+                    <div class="search-result-panel">
+                        <div class="search-result-content">
+                            <h3 <?php if(get_post_type() == 'page')
+                            echo 'style="margin-bottom: 15px;"'; ?>
+                            class="search-result-title">
                                 <a href="<?php the_permalink(); ?>">
                                     <?php the_title(); ?>
                                 </a>
                             </h3>
-                            <p class="blog-post-info">
-                                <?php the_date(); ?> By <a href="#"><?php the_author(); ?></a>
-                            </p>          
-                            <h4 class="blog-post-excerpt">
-                                <?php echo wp_trim_words(get_the_content(), 20); ?>
-                            </h4>
-                            
+<?php
+                            if(get_post_type() == 'post' || get_post_type() == 'project'){
+?>
+                                <p class="search-result-info">
+                                    <?php the_date(); ?> By
+                                    <a href="#"><?php the_author(); ?></a>
+                                </p>     
+<?php
+                            }
+?>
+                            <p class="search-result-excerpt">
+                                <?php echo wp_trim_words(get_the_content(), 30); ?>
+                            </p>
                         </div>  
                     </div>       
 <?php 
