@@ -21,34 +21,34 @@
                     <?php get_template_part('content', 'single-pagination'); ?>                         
                 </div>
 <?php
-                $relatedPosts = new WP_Query(array(
-                    'posts_per_page' => -1,
-                    'post_type' => 'post',
-                    'orderby' => 'title',
-                    'order' => 'ASC',
-                    'meta_query' => array(
-                        array(
-                        'key' => 'related_posts',
-                        'compare' => 'LIKE', //Contains
-                        'value' => '"'.get_the_ID().'"'
-                        )
-                    )
-                ));
+                // $relatedPosts = new WP_Query(array(
+                //     'posts_per_page' => 2,
+                //     'post_type' => 'post',
+                //     'orderby' => 'title',
+                //     'order' => 'ASC',
+                //     'meta_query' => array(
+                //         array(
+                //         'key' => 'related_posts',
+                //         'compare' => 'LIKE', //Contains
+                //         'value' => '"'.get_the_ID().'"'
+                //         )
+                //     )
+                // ));
+                $relatedPosts = get_field('related_posts');
 
                 // if(comments_open())
                 //     comments_template();
-                if($relatedPosts->have_posts()){
+                if($relatedPosts){
 ?>     
                     <div class="related-posts-container">
                         <h4 class="related-posts-heading">Related Posts</h4>
                         <ul class="related-posts-list">
 <?php
-                        while($relatedPosts->have_posts()){
-                            $relatedPosts->the_post();
+                        foreach($relatedPosts as $post){
 ?>
                             <li>
-                                <a href="<?php the_permalink(); ?>">
-                                    <?php the_title(); ?>
+                                <a href="<?php echo get_the_permalink($post); ?>">
+                                    <?php echo get_the_title(); ?>
                                 </a>
                             </li>
 <?php
