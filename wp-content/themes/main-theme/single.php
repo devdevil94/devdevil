@@ -22,6 +22,7 @@
                     <?php get_template_part('content', 'single-pagination'); ?>                         
                 </div>
 <?php
+                
                 // if(comments_open())
                 //     comments_template();
 ?>

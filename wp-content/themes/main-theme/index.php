@@ -34,7 +34,6 @@
                             <h4 class="blog-post-excerpt">
                                 <?php echo wp_trim_words(get_the_content(), 20); ?>
                             </h4>
-                            
                         </div>  
                     </div>       
 <?php 
