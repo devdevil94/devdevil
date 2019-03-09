@@ -45,6 +45,22 @@
                     </div>
 <?php
                 }
+                $componentsNames = explode(',', get_field('components_names'));
+                $componentsLinks = explode(',', get_field('components_links'));
+
+                if($componentsNames && $componentsLinks){
+?>
+                    <div class="components-list-container">
+                        <ul class="components-list">
+                            <li>
+                                <a href="<?php echo $componentsLinks[0]; ?>">
+                                    <?php echo $componentsNames[0]; ?>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+<?php
+                }
 ?>
             </div>
         </div>
