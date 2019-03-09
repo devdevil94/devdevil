@@ -19,24 +19,7 @@
                 </div>
                 <div class="single-post-content"><?php the_content(); ?></div>
                 <div class="single-post-pag">
-<?php               
-                    if(get_previous_post()){
-?>
-                        <div class="post-prev">
-                            <?php previous_post_link('&laquo; %link'); ?>
-                        </div>
-<?php
-                    } 
-?>
-<?php               
-                    if(get_next_post()){
-?>
-                        <div class="post-next">
-                            <?php next_post_link('%link &raquo;'); ?>
-                        </div>
-<?php
-                    } 
-?>                           
+                    <?php get_template_part('content', 'single-pagination'); ?>                         
                 </div>
 <?php
                 // if(comments_open())

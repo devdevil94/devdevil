@@ -93,4 +93,16 @@
 .search-result-info a:hover{
     color: #C7EFCF;
 }
+@media screen and (max-width: 990px){
+    #search-results-body{
+        flex-direction: column;
+    }
+    .search-results-container{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .search-result-panel{
+        flex-direction: column;
+    }
 
+}

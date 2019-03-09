@@ -26,7 +26,7 @@
                                 </a>
                             </h3>
                             <p class="recent-post-author">
-                                By <a href="#"><?php the_author(); ?></a>
+                                By <a href="#">Admin</a>
                             </p>          
                             <h4 class="recent-post-excerpt">
                                 <?php

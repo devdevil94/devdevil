@@ -8,8 +8,8 @@
             <h3 class="blog-posts-heading">Blog Posts</h3>
 <?php 
             $postsListQuery = new WP_Query(array(
-                'posts_per_page' => 4,
-                'post_type' => 'post'
+                'post_type' => 'post',
+                'paged' => (get_query_var('paged')) ? absint(get_query_var('paged')) : 1
             ));
             if($postsListQuery->have_posts()){
                 while($postsListQuery->have_posts()){
@@ -28,7 +28,7 @@
                                 </a>
                             </h3>
                             <p class="blog-post-info">
-                                <?php the_date(); ?> By <a href="#"><?php the_author(); ?></a>
+                                <?php the_date(); ?> By <a href="#">Admin</a>
                             </p>          
                             <h4 class="blog-post-excerpt">
                                 <?php echo wp_trim_words(get_the_content(), 20); ?>
@@ -40,10 +40,15 @@
                 }
 ?>
                 <div class="blog-post-pag">
-<?php
-                    echo paginate_links();
-// next_post_link('<span>Next</span><h3>%link</h3>', '%title', false);
-// previous_posts_link('<span>Prev</span><h3>%link</h3>', '%title', false);
+<?php               
+                    $big = 999999999;
+                    $pagArgs = array(
+                        'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
+                        'format' => '?paged=%#%',
+                        'current' => max(1, get_query_var('paged')),
+                        'total' => $postsListQuery->max_num_pages
+                    );
+                    echo paginate_links($pagArgs);
 ?>
                 </div>
 <?php               

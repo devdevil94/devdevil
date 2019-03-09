@@ -9,7 +9,8 @@
 <?php 
             $projectsListQuery = new WP_Query(array(
                 'posts_per_page' => 1,
-                'post_type' => 'project'
+                'post_type' => 'project',
+                'paged' => (get_query_var('paged')) ? absint(get_query_var('paged')) : 1
             ));
             if($projectsListQuery->have_posts()){
                 while($projectsListQuery->have_posts()){
@@ -28,12 +29,11 @@
                                 </a>
                             </h3>
                             <p class="project-info">
-                                <?php the_date(); ?> By <a href="#"><?php the_author(); ?></a>
+                                <?php the_date(); ?> By <a href="#">Admin</a>
                             </p>          
                             <h4 class="project-excerpt">
                                 <?php echo wp_trim_words(get_the_content(), 20); ?>
-                            </h4>
-                            
+                            </h4>   
                         </div>  
                     </div>       
 <?php 
@@ -41,7 +41,14 @@
 ?>
                 <div class="project-pag">
 <?php
-                    echo paginate_links();                   
+                    $big = 999999999;
+                    $pagArgs = array(
+                        'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
+                        'format' => '?paged=%#%',
+                        'current' => max(1, get_query_var('paged')),
+                        'total' => $projectsListQuery->max_num_pages
+                    );
+                    echo paginate_links($pagArgs);                   
 ?>
                 </div>
 <?php               

@@ -27,7 +27,7 @@
 ?>
                                 <p class="search-result-info">
                                     <?php the_date(); ?> By
-                                    <a href="#"><?php the_author(); ?></a>
+                                    <a href="#">Admin</a>
                                 </p>     
 <?php
                             }
