@@ -169,3 +169,18 @@ header{
 .sidebar{
     flex: 2;
 }
+
+.list-pag{
+    margin-top: 50px;
+    text-align: center;
+    /* display: inline; */
+}
+.list-pag .page-numbers{
+    padding: 3px 7px;
+    background-color: #C7EFCF;
+    border-radius: 3px;
+}
+.list-pag .current{
+    background-color: #6242f4;
+    color: #FAF9FF;
+}

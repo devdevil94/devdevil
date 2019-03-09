@@ -9,6 +9,7 @@
 <?php 
             $postsListQuery = new WP_Query(array(
                 'post_type' => 'post',
+                'posts_per_page' => 1,
                 'paged' => (get_query_var('paged')) ? absint(get_query_var('paged')) : 1
             ));
             if($postsListQuery->have_posts()){
@@ -39,7 +40,7 @@
 <?php 
                 }
 ?>
-                <div class="blog-post-pag">
+                <div class="list-pag">
 <?php               
                     $big = 999999999;
                     $pagArgs = array(

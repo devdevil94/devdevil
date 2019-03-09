@@ -29,12 +29,7 @@
                                 By <a href="#">Admin</a>
                             </p>          
                             <h4 class="recent-post-excerpt">
-                                <?php
-                                    // if(has_excerpt())
-                                    //     echo get_the_excerpt();
-                                    // else
-                                        echo wp_trim_words(get_the_content(), 20);
-                                    ?>
+                                <?php echo wp_trim_words(get_the_content(), 20); ?>
                             </h4>
                             <p class="recent-post-date"><?php the_date(); ?></p>
                         </div>  

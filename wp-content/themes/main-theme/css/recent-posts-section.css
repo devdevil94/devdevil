@@ -30,7 +30,7 @@
     width: 80%;
 }
 .recent-post-panel:hover{
-    opacity: 0.8;
+    opacity: 0.92;
     transform: scale(1.02);
 }
 .recent-post-thumbnail{
@@ -64,12 +64,20 @@
     padding-left: 5px;
 }
 .recent-post-excerpt{
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px;
     text-align: justify;
+    font-weight: normal;
 }
 .recent-post-author{
     text-align: end;
     padding-right: 20px;
+}
+.recent-post-author a{
+    font-weight: bold;
+    color: rgb(56, 53, 53);
+}
+.recent-post-author a:hover{
+    color: rgb(156, 156, 156);
 }
 
 @media screen and (max-width: 990px){

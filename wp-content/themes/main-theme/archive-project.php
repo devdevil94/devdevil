@@ -39,7 +39,7 @@
 <?php 
                 }
 ?>
-                <div class="project-pag">
+                <div class="list-pag">
 <?php
                     $big = 999999999;
                     $pagArgs = array(
