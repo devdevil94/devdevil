@@ -59,6 +59,9 @@ img{
 a{
     text-decoration: none;
 }
+li{
+    list-style: none;
+}
 body{
     background-color: #FAF9FF;
 }
@@ -121,7 +124,6 @@ header{
 .fa-bars{
     color: #6242f4;
 }
-
 
 
 @media screen and (max-width: 990px){ 

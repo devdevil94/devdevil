@@ -55,6 +55,27 @@
 }
 /* .project-excerpt{} */
 
+.related-posts-container{
+    margin-top: 20px;
+    padding: 20px 0;
+    border-top: 4px solid #6242f4;
+}
+.related-posts-heading{
+    font-size: 1.2rem;
+
+}
+.related-posts-list{
+    padding: 7px 5px;
+}
+.related-post{
+    margin-bottom: 3px;
+}
+.related-post a{
+    color: #6242f4;
+}
+.related-post a:hover{
+    color: #C7EFCF;
+}
 @media screen and (max-width: 1326px){
     .project-thumbnail img{
         height: 100%;

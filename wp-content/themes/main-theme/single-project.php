@@ -21,19 +21,6 @@
                     <?php get_template_part('content', 'single-pagination'); ?>                         
                 </div>
 <?php
-                // $relatedPosts = new WP_Query(array(
-                //     'posts_per_page' => 2,
-                //     'post_type' => 'post',
-                //     'orderby' => 'title',
-                //     'order' => 'ASC',
-                //     'meta_query' => array(
-                //         array(
-                //         'key' => 'related_posts',
-                //         'compare' => 'LIKE', //Contains
-                //         'value' => '"'.get_the_ID().'"'
-                //         )
-                //     )
-                // ));
                 $relatedPosts = get_field('related_posts');
 
                 // if(comments_open())
@@ -46,9 +33,9 @@
 <?php
                         foreach($relatedPosts as $post){
 ?>
-                            <li>
+                            <li class="related-post">
                                 <a href="<?php echo get_the_permalink($post); ?>">
-                                    <?php echo get_the_title(); ?>
+                                    <?php echo get_the_title($post); ?>
                                 </a>
                             </li>
 <?php
