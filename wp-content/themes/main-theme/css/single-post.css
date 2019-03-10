@@ -5,7 +5,7 @@
     padding: 50px 12%;
 }
 .single-post,
-.single-page{
+.single-page{ 
     flex: 6;
 }
 .single-post-container,
@@ -89,5 +89,10 @@
     .single-page-container{
         margin-right: 0;
         margin-bottom: 30px;
+    }
+    .single-post,
+    .single-page{
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }

@@ -84,10 +84,17 @@
 @media screen and (max-width: 990px){
     #projects-body{
         flex-direction: column;
+        top: 250px;
+
+    }
+    .projects{
+        padding-left: 10%;
+        padding-right: 10%;
     }
     .projects-container{
         margin-right: 0;
         margin-bottom: 30px;
+        
     }
     .project-panel{
         flex-direction: column;

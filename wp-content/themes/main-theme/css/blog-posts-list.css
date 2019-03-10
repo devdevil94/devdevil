@@ -71,5 +71,8 @@
     .blog-post-panel{
         flex-direction: column;
     }
-
+    .blog-posts{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }

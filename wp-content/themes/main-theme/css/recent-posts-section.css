@@ -83,7 +83,6 @@
 @media screen and (max-width: 990px){
     #home-content{
         flex-direction: column;
-        padding: 0 5%;
         /* margin-top: 250px; */
     }
     .recent-posts-container{
@@ -91,6 +90,10 @@
     }
     .recent-post-panel{
         width: 95%;
+    }
+    .recent-posts{
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
 
