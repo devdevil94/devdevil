@@ -5,17 +5,16 @@
 
 }
 .recent-posts-heading{
-    font-size: 18px;
-    align-self: flex-start;
+    font-size: 1.8rem;
 }
 .recent-posts{
     flex: 6;
 }
 .recent-posts-container{
-    display: flex;
-    justify-content: space-around;
+    /* display: flex; */
+    /* justify-content: space-around;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; */
     padding: 15px 25px;
     background-color: #fff;
     margin-right: 25px;
@@ -24,10 +23,10 @@
     0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .recent-post-panel{   
-    margin: 20px 0;
+    margin: 30px 0;
     border-radius: 0 0 9px 9px;
     transition: 0.3s ease-in;
-    width: 80%;
+    width: 100%;
 }
 .recent-post-panel:hover{
     opacity: 0.92;
@@ -82,14 +81,14 @@
 
 @media screen and (max-width: 990px){
     #home-content{
-        flex-direction: column;
         /* margin-top: 250px; */
+        flex-direction: column;
     }
     .recent-posts-container{
         margin-right: 0;
     }
     .recent-post-panel{
-        width: 95%;
+        /* width: 95%; */
     }
     .recent-posts{
         padding-left: 10%;

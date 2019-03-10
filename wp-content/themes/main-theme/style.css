@@ -68,7 +68,9 @@ li{
 body{
     background-color: #FAF9FF;
 }
-
+p{
+    line-height: 160%;
+}
 /* ///////// Navigation Menu Section \\\\\\\\\ */
 header{
     display: flex;
