@@ -52,11 +52,23 @@
 ?>
                     <div class="components-list-container">
                         <ul class="components-list">
-                            <li>
-                                <a href="<?php echo $componentsLinks[0]; ?>">
-                                    <?php echo $componentsNames[0]; ?>
-                                </a>
-                            </li>
+<?php
+                            for($i = 0; $i < count($componentsNames); ++$i){
+?>
+                                <li>
+<?php 
+                                    if($componentsLinks[$i] != '-'){
+?>
+                                        <a href="<?php echo $componentsLinks[$i]; ?>">
+                                            <?php echo $componentsNames[$i]; ?>
+                                        </a>
+<?php
+                                    }else echo $componentsNames[$i];
+?>
+                                </li>
+<?php
+                            }
+?>
                         </ul>
                     </div>
 <?php
