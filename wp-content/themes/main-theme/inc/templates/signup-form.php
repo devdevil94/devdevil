@@ -2,7 +2,7 @@
 wp_enqueue_script('mailchimp-js',
 '//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js', array( 'jquery' ), true);
 wp_enqueue_style('mailchimp-css', get_template_directory_uri().'/css/signup-form.css'
-,array(), version_id(), 'all'); 
+,array(), microtime(), 'all'); 
 ?>
 
 <div id="mc_embed_signup">

@@ -51,7 +51,7 @@
 <?php               
             }else{
 ?>
-                <p style="margin-bottom: 150px;">No results found</p>
+                <p style="margin-bottom: 200px;">No results found</p>
 <?php
             }
 ?>          

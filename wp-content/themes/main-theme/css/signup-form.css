@@ -26,6 +26,17 @@
 span.asterisk{
     color: #6242f4;
 }
+#mce-EMAIL,
+#mce-FNAME{
+    border: 2px solid #6242f4;
+    border-radius: 3px;
+    padding: 7px 4px;
+    background-color: #FAF9FF;
+}
+#mce-EMAIL:focus,
+#mce-FNAME:focus{
+    background-color: #C7EFCF;
+}
 #mc-embedded-subscribe{
     background-color: #6242f4;
     color: #FAF9FF;

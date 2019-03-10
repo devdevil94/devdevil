@@ -21,7 +21,7 @@
 .single-page-title{
     font-size: 1.8rem; 
     margin-bottom: 20px;
-    text-align: justify;
+    text-align: left;
 }
 .single-post-info{
     margin-bottom: 15px;
@@ -47,9 +47,12 @@
 }
 .single-post-content,
 .single-page-content{
-    text-align: justify;
+    text-align: left;
     margin-bottom: 50px;
+    font-size: 18px;
+
 }
+
 .single-post-pag{
     display: flex;
     justify-content: space-around;
