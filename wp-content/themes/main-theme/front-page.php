@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<div id="home-content">
+<div id="home-content" class="main-body">
     <div class="section recent-posts">
         <div class="recent-posts-container">
             <h3 class="recent-posts-heading">Recent Blog Posts</h3>

@@ -4,7 +4,7 @@
     while(have_posts()){
         the_post();
 ?>
-    <div id="single-post-body">
+    <div id="single-post-body" class="main-body">
         <div class="section single-post">
             <div class="single-post-container">
                 <h2 class="single-post-title"><?php the_title(); ?></h2>

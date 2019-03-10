@@ -29,6 +29,10 @@ function version_id(){
 
     return VERSION;
 }
+function load_google_fonts(){
+    wp_enqueue_style('fonts-style', '//fonts.googleapis.com/css?family=Roboto',
+    array(), microtime(), 'all');
+}
 
 function load_custom_files(){ 
     wp_enqueue_style('main-stylesheet', get_stylesheet_uri(),
@@ -86,5 +90,6 @@ add_action('after_setup_theme', 'devdevil_theme_support');
 add_action('widgets_init', 'devdevil_widgets_setup');
 add_action('wp_enqueue_scripts', 'load_custom_files');
 add_action('wp_enqueue_scripts', 'load_fontawesome');
+add_action('wp_enqueue_scripts', 'load_google_fonts');
 
 ?>

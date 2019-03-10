@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<div id="blog-posts-body">
+<div id="blog-posts-body" class="main-body">
     <div class="section blog-posts">
         <div class="blog-posts-container">
             <h3 class="blog-posts-heading">Blog Posts</h3>

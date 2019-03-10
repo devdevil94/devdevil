@@ -5,7 +5,7 @@
     while(have_posts()){
         the_post();
 ?>
-    <div id="single-page-body">
+    <div id="single-page-body" class="main-body">
         <div class="section single-page"> 
             <div class="single-page-container">
                 <h2 class="single-page-title"><?php the_title(); ?></h2>

@@ -13,12 +13,15 @@ Tea Green -> #C7EFCF
 Very Light Gray -> #FAF9FF
 */
 /* ///////// Global \\\\\\\\\ */
-
+@font-face{
+    font-family: 'Roboto';
+    src: url('../../uploads/fonts/roboto/Roboto-Regular.ttf');
+}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Roboto';
 }
 
 .section{
@@ -125,7 +128,6 @@ header{
     color: #6242f4;
 }
 
-
 @media screen and (max-width: 990px){ 
     header{
         padding: 0 20px;
@@ -149,6 +151,7 @@ header{
         display: block;
         border: 1px solid #6242f4;
     }
+    
 }
 @media screen and (max-width: 783px){
     nav{

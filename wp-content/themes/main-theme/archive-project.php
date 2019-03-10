@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<div id="projects-body">
+<div id="projects-body" class="main-body">
     <div class="section projects">
         <div class="projects-container">
             <h3 class="projects-heading">Projects</h3>
