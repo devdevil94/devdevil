@@ -95,4 +95,12 @@
         padding-left: 10%;
         padding-right: 10%;
     }
+    .single-post-pag{
+        flex-direction: column;
+    }
+    .post-prev,
+    .post-next{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
 }
