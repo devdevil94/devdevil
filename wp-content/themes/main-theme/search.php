@@ -23,7 +23,8 @@
                                 </a>
                             </h3>
 <?php
-                            if(get_post_type() == 'post' || get_post_type() == 'project'){
+                            if(get_post_type() == 'post' ||
+                            get_post_type() == 'project'){
 ?>
                                 <p class="search-result-info">
                                     <?php the_date(); ?> By
@@ -40,7 +41,7 @@
 <?php 
                 }
 ?>
-                <div class="blog-post-pag">
+                <div class="list-pag">
 <?php
                     echo paginate_links();
 // next_post_link('<span>Next</span><h3>%link</h3>', '%title', false);

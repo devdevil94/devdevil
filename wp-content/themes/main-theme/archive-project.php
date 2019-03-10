@@ -8,7 +8,7 @@
             <h3 class="projects-heading">Projects</h3>
 <?php 
             $projectsListQuery = new WP_Query(array(
-                'posts_per_page' => 1,
+                'posts_per_page' => 10,
                 'post_type' => 'project',
                 'paged' => (get_query_var('paged')) ? absint(get_query_var('paged')) : 1
             ));
@@ -41,14 +41,16 @@
 ?>
                 <div class="list-pag">
 <?php
+//Pagination for this file DOES NOT Work..
+//Needs fixing before you have more than 10 projects
                     $big = 999999999;
-                    $pagArgs = array(
+                    $projectsPagArgs = array(
                         'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
                         'format' => '?paged=%#%',
                         'current' => max(1, get_query_var('paged')),
                         'total' => $projectsListQuery->max_num_pages
                     );
-                    echo paginate_links($pagArgs);                   
+                    echo paginate_links($projectsPagArgs);                   
 ?>
                 </div>
 <?php               

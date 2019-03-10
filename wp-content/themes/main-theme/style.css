@@ -177,10 +177,17 @@ header{
     text-align: center;
     /* display: inline; */
 }
+.list-pag a{
+    border: 2px solid #FFFFFF;
+}
+.list-pag a:hover{
+    border: 2px solid #6242f4;
+}
 .list-pag .page-numbers{
     padding: 3px 7px;
     background-color: #C7EFCF;
-    border-radius: 3px;
+    border-radius: 5px;
+    color: rgb(56, 53, 53);
 }
 .list-pag .current{
     background-color: #6242f4;

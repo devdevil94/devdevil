@@ -29,8 +29,10 @@ span.asterisk{
 #mc-embedded-subscribe{
     background-color: #6242f4;
     color: #FAF9FF;
-    padding: 4px 8px;
+    padding: 8px 20px;
     border-radius: 5px;
+    border: none;
+    font-size: 0.9rem;
 }
 #mc-embedded-subscribe:hover{
     color: #6242f4;
