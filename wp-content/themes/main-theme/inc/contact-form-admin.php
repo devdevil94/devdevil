@@ -21,12 +21,11 @@ function devdevil_contact_form_settings(){
 }
 function devdevil_activate_contact_callback(){
     $option = get_option('activate_contact_form');
-    $checked = (@$option == 1 ? 'cheched' : '');
-
+    $checked = (@$option == 1 ? 'checked' : '');
     echo '
         <label>
             <input type="checkbox" id="activate_contact_form" name="activate_contact_form"
-            value="1"'.$checked.' /> Activate Contact Form
+            value="1"'.$checked.' />
         </label>
     ';
 }
