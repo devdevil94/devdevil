@@ -4,7 +4,7 @@
     display: flex;
     padding: 50px 12%;
 }
-.single-post,
+.single-post-section,
 .single-page{ 
     flex: 6;
 }
@@ -93,7 +93,7 @@
         margin-right: 0;
         margin-bottom: 30px;
     }
-    .single-post,
+    .single-post-section,
     .single-page{
         padding-left: 10%;
         padding-right: 10%;

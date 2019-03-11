@@ -4,7 +4,7 @@ get_template_directory_uri().'/css/social-media-accounts.css'
 ,array(), microtime(), 'all');
 
 $twitterLink = 'https://www.twitter.com/'.esc_attr(get_option('twitter'));
-$googleLink = 'https://www.google.com/'.esc_attr(get_option('google'));
+$googleLink = 'https://plus.google.com/'.esc_attr(get_option('google'));
 $facebookLink = 'https://www.facebook.com/'.esc_attr(get_option('facebook'));
 ?>
 

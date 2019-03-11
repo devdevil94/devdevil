@@ -6,7 +6,7 @@
         store_post_views(get_the_ID()); 
 ?>
     <div id="single-post-body" class="main-body">
-        <div class="section single-post">
+        <div class="section single-post-section">
             <div class="single-post-container">
                 <h2 class="single-post-title"><?php the_title(); ?></h2>
                 <div class="single-post-info">
