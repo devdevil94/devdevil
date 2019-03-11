@@ -7,10 +7,10 @@ function devdevil_add_social_media_page(){
 }
 
 function devdevil_social_media_settings(){
-    register_setting('devdevil-social-media', 'twitter','devdevil_sanitize_twitter');
-    register_setting('devdevil-social-media', 'facebook');
-    register_setting('devdevil-social-media', 'google');
-    register_setting('devdevil-social-media', 'github');
+    register_setting('devdevil-social-media-options', 'twitter','devdevil_sanitize_twitter');
+    register_setting('devdevil-social-media-options', 'facebook');
+    register_setting('devdevil-social-media-options', 'google');
+    register_setting('devdevil-social-media-options', 'github');
 
     // register_setting('devdevil-social-media', 'social_media_accounts',
     // 'social_media_accounts_callback');

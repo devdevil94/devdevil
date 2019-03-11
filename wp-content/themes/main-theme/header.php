@@ -15,7 +15,7 @@
 <header>
     <div class="logo">
         <a href="<?php echo site_url(); ?>">
-            <img src="<?php echo get_theme_file_uri('images/devdevil_logo.png') ?>"
+            <img src="<?php echo get_theme_file_uri('images/devdevil_logo.png'); ?>"
             alt="devDevil">
         </a>
     </div>

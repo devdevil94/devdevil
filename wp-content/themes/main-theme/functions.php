@@ -10,6 +10,7 @@ require get_template_directory().'/inc/widgets/advertisement-area-widget.php';
 
 require get_template_directory().'/inc/general-settings-admin.php';
 require get_template_directory().'/inc/social-media-settings-admin.php';
+require get_template_directory().'/inc/contact-form-admin.php';
 
 function load_bootstrap(){
     // wp_enqueue_style('bootstrap-css','//stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css');

@@ -14,7 +14,6 @@ function devdevil_add_admin_page(){
 //$menu_slug, $function)
     add_submenu_page('devdevil_general_options', 'devDevil Settings', 'Settings',
     'manage_options', 'devdevil_general_options', 'devdevil_create_page');
-
 }
 
 add_action('admin_menu', 'devdevil_add_admin_page');
@@ -22,7 +21,7 @@ add_action('admin_menu', 'devdevil_general_settings');
 
 function devdevil_general_settings(){
 //register_setting($option_group, $option_name, $sanitize_callback)
-    register_setting('devdevil-settings-group', 'first_name');
+    register_setting('devdevil-settings-group', 'first_name'); //Chane settings group's name
     register_setting('devdevil-settings-group', 'last_name');
 //add_settings_section($id, $title, $callback, $page)
     add_settings_section('devdevil-general-options', 'General Information',
@@ -30,9 +29,9 @@ function devdevil_general_settings(){
 //add_settings_field($id, $title, $callback, $page, $section, $args)
     add_settings_field('sidebar-name', 'Full Name', 'devdevil_full_name',
     'devdevil_general_options', 'devdevil-general-options');
- 
-}
+    
 
+}
 
 function devdevil_theme_general_options(){
     echo 'Activate theme options.';
