@@ -26,7 +26,7 @@
                                 </a>
                             </h3>
                             <p class="recent-post-author">
-                                By <a href="#">Admin</a>
+                                By <?php the_author_posts_link(); ?>
                             </p>          
                             <h4 class="recent-post-excerpt">
                                 <?php echo wp_trim_words(get_the_content(), 20); ?>

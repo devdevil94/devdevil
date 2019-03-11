@@ -82,14 +82,12 @@ header{
     border-bottom: 2px solid #6242f4;
 }
 .logo{
-    height: 50px;
-    line-height: 50px;
-    font-size: 24px;
-    font-weight: bold;
-    float: left;
+ 
+    
+    
 }
 .logo a{
-    color: #6242f4;
+    display: block;
 }
 .logo a h4{
     color: #ffffff;

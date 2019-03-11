@@ -28,7 +28,7 @@
 ?>
                                 <p class="search-result-info">
                                     <?php the_date(); ?> By
-                                    <a href="#">Admin</a>
+                                    <?php the_author_posts_link(); ?>
                                 </p>     
 <?php
                             }

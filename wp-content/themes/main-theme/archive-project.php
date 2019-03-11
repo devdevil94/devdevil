@@ -29,7 +29,8 @@
                                 </a>
                             </h3>
                             <p class="project-info">
-                                <?php the_date(); ?> By <a href="#">Admin</a>
+                                <?php the_date(); ?>
+                                 By <?php the_author_posts_link(); ?>
                             </p>          
                             <h4 class="project-excerpt">
                                 <?php echo wp_trim_words(get_the_content(), 20); ?>
