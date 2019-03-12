@@ -13,7 +13,7 @@
                         <?php the_date(); ?>
                     </span>
                     <span class="single-post-author">
-                        by <a href="#"><?php the_author(); ?></a>
+                        by <?php the_author_posts_link(); ?>
                     </span>
                 </div>
                 <div class="single-post-content"><?php the_content(); ?></div>

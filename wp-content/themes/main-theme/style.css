@@ -145,8 +145,8 @@ header{
         border: 1px solid #6242f4;
     }
     .sidebar{
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 7%;
+        padding-right: 7%;
     }
     
 }
@@ -189,4 +189,39 @@ header{
 .list-pag .current{
     background-color: #6242f4;
     color: #FAF9FF;
+}
+#contact-form-container{
+    padding: 10px 30%;
+}
+.form-group input{
+    padding: 3px 5px;
+}
+.form-group textarea{
+    padding-left: 5px;
+    padding-top: 3px;
+    resize: none;
+}
+.form-group input,
+.form-group textarea{
+    margin: 5px 0;
+    width: 100%;
+    background-color: #FAF9FF;
+    border: 2px solid #6242f4;
+    border-radius: 4px;
+}
+.form-group input:focus,
+.form-group textarea:focus{
+    background-color: #C7EFCF;
+}
+#contact-form-submit{
+    background-color: #C7EFCF;
+    border: 2px solid #6242f4;
+    padding: 3px 7px;
+    border-radius: 4px;
+    font-family: 'Roboto';
+}
+#contact-form-submit:hover{
+    color: #FFFFFF;
+    background-color: #6242f4;
+    cursor: pointer;
 }
