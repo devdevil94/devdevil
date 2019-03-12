@@ -11,20 +11,21 @@
                 <h2 class="single-page-title"><?php the_title(); ?></h2>
                 <p><?php the_content(); ?></p>
                 <div id="contact-form-container">
-                    <form action="#" method="post">
+                    <form id="contact-form" action="#" method="post"
+                    data-url="<?php echo admin_url('admin-ajax.php'); ?>">
                         <div class="form-group">
                             <input type="text" class="form-control"
                             placeholder="Your Name" id="contact_name" name="contact_name"
-                            required="required">
+                        >
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control"
                             placeholder="Your Email" id="contact_email"
-                            name="contact_email" required="required">
+                            name="contact_email">
                         </div>
                         <div class="form-group">
                             <textarea name="contact_message" id="contact_message"
-                            class="form-control" required="required"
+                            class="form-control"
                             placeholder="Your Message" rows="15"></textarea>
                         </div>
                         <button type="submit" id="contact-form-submit">Submit</button>

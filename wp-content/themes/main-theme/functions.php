@@ -11,6 +11,7 @@ require get_template_directory().'/inc/widgets/advertisement-area-widget.php';
 require get_template_directory().'/inc/general-settings-admin.php';
 require get_template_directory().'/inc/social-media-settings-admin.php';
 require get_template_directory().'/inc/contact-form-admin.php';
+require get_template_directory().'/inc/ajax.php';
 
 function load_bootstrap(){
     // wp_enqueue_style('bootstrap-css','//stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css');
@@ -29,10 +30,6 @@ function version_id(){
     if(WP_DEBUG) return microtime();
 
     return VERSION;
-}
-function load_google_fonts(){
-    wp_enqueue_style('fonts-style', '//fonts.googleapis.com/css?family=Roboto',
-    array(), microtime(), 'all');
 }
 
 function load_custom_files(){ 
@@ -91,6 +88,5 @@ add_action('after_setup_theme', 'devdevil_theme_support');
 add_action('widgets_init', 'devdevil_widgets_setup');
 add_action('wp_enqueue_scripts', 'load_custom_files');
 add_action('wp_enqueue_scripts', 'load_fontawesome');
-add_action('wp_enqueue_scripts', 'load_google_fonts');
 
 ?>

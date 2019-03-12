@@ -17,6 +17,48 @@ function navSlide(){
     //    menuBars.classList.toggle('toggle');
     });
 }
+
+
+(function($) {
+    $('#contact-form').on('submit', function(e){
+        e.preventDefault();
+        var form = $(this);
+        
+        var name = form.find('#contact_name').val(),
+            email = form.find('#contact_email').val(),
+            message = form.find('#contact_message').val();
+
+        var ajaxurl = form.data('url');
+
+        if(name == '' || email == '' || message == ''){
+            console.log('Empty Fields');
+            return;
+        }
+
+        $.ajax({
+            url: ajaxurl,
+            type: 'post',
+            data: {
+                name: name,
+                email: email,
+                message: message,
+                action: 'devdevil_save_user_contact'
+            },
+            error: function(response){
+                console.log(response);  
+            },
+            success: function(response){
+               
+            }
+        });
+
+        console.log(name);
+    });
+}(jQuery));
+
+
+
+
 (function($) {
     window.fnames = new Array();
     window.ftypes = new Array();
