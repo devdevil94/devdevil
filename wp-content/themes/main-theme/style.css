@@ -145,8 +145,8 @@ header{
         border: 1px solid #6242f4;
     }
     .sidebar{
-        padding-left: 7%;
-        padding-right: 7%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
     
 }
@@ -233,6 +233,15 @@ header{
         padding: 10px 10%;
     }
 }
+.form-processed{
+    color: #6242f4;
+}
+.form-error{
+    color: rgb(150, 2, 2);
+}
+.form-submitted{
+    color: green;
+}
 .input-error{
     border-color: rgb(150, 2, 2) !important;
 }
@@ -241,4 +250,7 @@ header{
 }
 .hide-msg{
     display: none;
+}
+.form-feedback{
+    display: block;
 }

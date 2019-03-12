@@ -31,6 +31,15 @@
                             <small id="message-error" class="form-control-msg hide-msg">A message is required</small>
                         </div>
                         <button type="submit" id="contact-form-submit">Submit</button>
+                        <small class="hide-msg form-processed">
+                            Submission in process, please wait.
+                        </small>
+                        <small class="hide-msg form-submitted">
+                            Message successfully submitted. Thank you. 
+                        </small>
+                        <small class="hide-msg form-error">
+                            Something was wrong. Please try again.
+                        </small>
                     </form>
                 </div> 
             </div>

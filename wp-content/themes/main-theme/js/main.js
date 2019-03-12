@@ -31,6 +31,7 @@ function navSlide(){
         var ajaxurl = form.data('url');
 
         $('.input-error').removeClass('input-error');
+        $('.form-feedback').removeClass('form-feedback');
 
         if(name == ''){
             $('#contact_name').addClass('input-error');
@@ -38,7 +39,7 @@ function navSlide(){
             console.log('no name');
             return;
         }
-        if(email == ''){
+        if(email == ''){ // Needs more validation
             $('#contact_email').addClass('input-error');
             $('#email-error').removeClass('hide-msg');
             console.log('no email');
@@ -51,6 +52,10 @@ function navSlide(){
             return;
         }
 
+        form.find('input, button, textarea').attr('disabled', 'disabled');
+        $('.form-processed').addClass('form-feedback');
+        
+
         $.ajax({
             url: ajaxurl,
             type: 'post',
@@ -61,11 +66,27 @@ function navSlide(){
                 action: 'devdevil_save_user_contact'
             },
             error: function(response){
-                console.log(response);  
+                $('.form-error').addClass('form-feedback');    
+                $('.form-processed').removeClass('form-feedback');
+                
+                form.find('input, button, textarea').removeAttr('disabled');
             },
             success: function(response){
-               if(response == 0)
-                console.log('Message Not Saved');
+                if(response == 0){
+                    setTimeout(function(){
+                        $('.form-error').addClass('form-feedback');    
+                        $('.form-processed').removeClass('form-feedback');
+                    
+                        form.find('input, button, textarea').removeAttr('disabled');
+                    }, 1500);
+                }else{
+                    setTimeout(function(){
+                        $('.form-submitted').addClass('form-feedback');    
+                        $('.form-processed').removeClass('form-feedback');
+                    
+                        form.find('input, button, textarea').removeAttr('disabled').val('');
+                    }, 1500);
+                }
             }
         });
 
