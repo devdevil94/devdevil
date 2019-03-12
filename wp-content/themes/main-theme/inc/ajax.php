@@ -10,8 +10,21 @@ function devdevil_save_user_contact(){
     $email = wp_strip_all_tags($_POST['email']);
     $message = wp_strip_all_tags($_POST['message']);
 
-    echo $email.','.$message.','.$title;
-    // wp_insert_post();
+    $args = array(
+        'post_title' => $title,
+        'post_content' => $message,
+        'post_author' => 1,
+        'post_status' => 'publish',
+        'post_type' => 'devdevil-contact',
+        'meta_input' => array(
+            '_contact_email_key' => $email
+        )
+    );
+
+    // wp_insert_post($args, $wp_error); For debugging and testing
+    $postID = wp_insert_post($args);
+
+    echo $postID;
 
     die();
 }

@@ -190,8 +190,9 @@ header{
     background-color: #6242f4;
     color: #FAF9FF;
 }
+
 #contact-form-container{
-    padding: 10px 25%;
+    padding: 10px 22%;
 }
 .form-group input{
     padding: 3px 5px;
@@ -219,14 +220,25 @@ header{
     padding: 3px 7px;
     border-radius: 4px;
     font-family: 'Roboto';
+    margin-top: 5px;
 }
 #contact-form-submit:hover{
     color: #FFFFFF;
     background-color: #6242f4;
     cursor: pointer;
 }
+
 @media screen and (max-width: 990px){
     #contact-form-container{
-        padding: 10px 15%;
+        padding: 10px 10%;
     }
+}
+.input-error{
+    border-color: rgb(150, 2, 2) !important;
+}
+.form-control-msg{
+    color: rgb(150, 2, 2);
+}
+.hide-msg{
+    display: none;
 }

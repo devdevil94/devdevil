@@ -30,8 +30,24 @@ function navSlide(){
 
         var ajaxurl = form.data('url');
 
-        if(name == '' || email == '' || message == ''){
-            console.log('Empty Fields');
+        $('.input-error').removeClass('input-error');
+
+        if(name == ''){
+            $('#contact_name').addClass('input-error');
+            $('#name-error').removeClass('hide-msg');
+            console.log('no name');
+            return;
+        }
+        if(email == ''){
+            $('#contact_email').addClass('input-error');
+            $('#email-error').removeClass('hide-msg');
+            console.log('no email');
+            return;
+        }
+        if(message == ''){
+            $('#contact_message').addClass('input-error');
+            $('#message-error').removeClass('hide-msg');
+            console.log('no message');
             return;
         }
 
@@ -48,11 +64,11 @@ function navSlide(){
                 console.log(response);  
             },
             success: function(response){
-               
+               if(response == 0)
+                console.log('Message Not Saved');
             }
         });
 
-        console.log(name);
     });
 }(jQuery));
 

@@ -15,18 +15,20 @@
                     data-url="<?php echo admin_url('admin-ajax.php'); ?>">
                         <div class="form-group">
                             <input type="text" class="form-control"
-                            placeholder="Your Name" id="contact_name" name="contact_name"
-                        >
+                            placeholder="Your Name" id="contact_name" name="contact_name">
+                            <small id="name-error" class="form-control-msg hide-msg">Your name is required</small>
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control"
                             placeholder="Your Email" id="contact_email"
-                            name="contact_email">
+                            name="contact_email" >
+                            <small id="email-error" class="form-control-msg hide-msg">Your email is required</small>
                         </div>
                         <div class="form-group">
                             <textarea name="contact_message" id="contact_message"
-                            class="form-control"
-                            placeholder="Your Message" rows="15"></textarea>
+                            class="form-control" placeholder="Your Message"
+                            rows="15"></textarea>
+                            <small id="message-error" class="form-control-msg hide-msg">A message is required</small>
                         </div>
                         <button type="submit" id="contact-form-submit">Submit</button>
                     </form>
