@@ -24,7 +24,20 @@ function devdevil_save_user_contact(){
     // wp_insert_post($args, $wp_error); For debugging and testing
     $postID = wp_insert_post($args);
 
-    echo $postID;
+    if($postID != 0){
+        $to = get_bloginfo('admin_email');
+        $subject = 'devDevil Contact Form - '.$title;
+        $headers[] = 'From: '.get_bloginfo('name').' <'.$to.'>';
+        $headers[] = 'Reply-To: '.$title.' <'.$email.'>';
+        $headers[] = 'Content-Type: text/html: charset=UTF-8';
+
+        wp_mail($to, $subject, $message, $headers);
+
+        echo $postID;
+    }else{
+        echo 0;
+    }
+
 
     die();
 }
