@@ -66,13 +66,12 @@
     }
     .blog-posts-container{
         margin-right: 0;
-        margin-bottom: 30px;
     }
     .blog-post-panel{
         flex-direction: column;
     }
     .blog-posts{
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }

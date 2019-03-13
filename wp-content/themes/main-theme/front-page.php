@@ -39,9 +39,7 @@
 ?>
         </div>
         <div class="view-posts">
-            <a class="big-btn" href="<?php echo site_url('/blog'); ?>">
-                View All Posts
-            </a>
+            <a class="big-btn" href="<?php echo site_url('/blog'); ?>">View All Posts</a>
         </div>        
     </div>
         

@@ -97,8 +97,8 @@
     }
     .single-post-section,
     .single-page{
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     .single-post-pag{
         flex-direction: column;

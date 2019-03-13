@@ -104,5 +104,8 @@
     .search-result-panel{
         flex-direction: column;
     }
-
+    .search-results{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }

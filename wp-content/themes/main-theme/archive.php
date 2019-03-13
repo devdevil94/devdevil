@@ -6,16 +6,8 @@
     <div class="section archive-posts">
         <div class="blog-posts-container">
 <?php
-            // if(is_author()){
-            //     the_post();
-            //     echo '<h3 class="blog-posts-heading>Posts by '.get_the_author().'</h3>';
-            //     rewind_posts();
-            // }elseif(is_category()){
-            //     echo '<h3 class="blog-posts-heading">Posts on '.single_cat_title().'</h3>';                
-            // }
-
             add_filter('get_the_archive_title', function ($title) {
-                if(is_author()) {
+                if(is_author()){
                     $title = 'Posts By '.get_the_author();
                 }elseif(is_category()){
                     $title = single_cat_title();
@@ -45,12 +37,12 @@
                                     <?php the_title(); ?>
                                 </a>
                             </h3>
-                            <p class="archive-post-info">
-                                <?php the_date(); ?> By <?php the_author_posts_link(); ?>
-                            </p>          
-                            <h4 class="archive-post-excerpt">
+                            <h4 class="archive-post-date">
+                                <?php the_date(); ?> <!-- Change this when cats. are added-->
+                            </h4>          
+                            <p class="archive-post-excerpt">
                                 <?php echo wp_trim_words(get_the_content(), 20); ?>
-                            </h4>
+                            </p>
                         </div>  
                     </div>       
 <?php 

@@ -7,24 +7,12 @@
 .archive-posts{
     flex: 6;
 }
-.blog-posts-container{
-    flex: 6;
-    padding: 15px 25px;
-    margin-right: 25px;
-    background-color: #fff;
-    box-shadow:
-    0 4px 8px 0 rgba(0,0,0,0.2),
-    0 6px 20px 0 rgba(0,0,0,0.19);
-}
-.blog-posts-heading{
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-}
 .archive-post-panel{
     display: flex;
-    background-color: #6242f4;
-    margin: 10px 0;
-    border-radius: 5px;
+    margin: 20px 0;
+    padding: 10px 0;
+    /* border-top: 3px solid #6242f4; */
+    border-bottom: 3px solid #6242f4;
 }
 .archive-post-thumbnail{
     padding: 10px;
@@ -33,46 +21,34 @@
     padding: 10px;
 }
 .archive-post-title a{
-    color: #FAF9FF;
+    color: rgb(56, 53, 53);
 }
 .archive-post-title a:hover{
     color: #C7EFCF;
 }
-.archive-post-info{
-    text-align: right;
+.archive-post-date{
+    font-size: 0.9rem;
+    font-weight: bold;
     margin-top: 10px;
     margin-bottom: 10px;
+    color: #6242f4;
 }
-.archive-post-info,
-.archive-post-info a{
-    color: #C7EFCF;
-    font-weight: bold;
-    font-size: 0.9rem;
-}
-.archive-post-info a:hover{
-    color: #FAF9FF;
-}
+
 /* .archive-post-excerpt{} */
 
 
 @media screen and (max-width: 1326px){
-    .archive-post-thumbnail img{
-        height: 100%;
-    }
+   
 }
 @media screen and (max-width: 990px){
     #archive-body{
         flex-direction: column;
     }
-    .blog-posts-container{
-        margin-right: 0;
-        margin-bottom: 30px;
-    }
     .archive-post-panel{
         flex-direction: column;
     }
-    .blog-posts{
-        padding-left: 10%;
-        padding-right: 10%;
+    .archive-posts{
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }

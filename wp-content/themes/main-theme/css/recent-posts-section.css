@@ -81,18 +81,14 @@
 
 @media screen and (max-width: 990px){
     #home-content{
-        /* margin-top: 250px; */
         flex-direction: column;
     }
     .recent-posts-container{
         margin-right: 0;
     }
-    .recent-post-panel{
-        /* width: 95%; */
-    }
     .recent-posts{
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
 
