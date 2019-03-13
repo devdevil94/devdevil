@@ -21,19 +21,19 @@
 }
 .project-panel{
     display: flex;
-    background-color: #6242f4;
-    margin: 10px 0;
-    border-radius: 5px;
+    margin: 20px 0;
+    padding: 10px 0;
+    /* border-top: 3px solid #6242f4; */
+    border-bottom: 3px solid #6242f4;
 }
 .project-thumbnail{
     padding: 10px;
 }
-
 .project-content{
     padding: 10px;
 }
 .project-title a{
-    color: #FAF9FF;
+    color: rgb(56, 53, 53);
 }
 .project-title a:hover{
     color: #C7EFCF;
@@ -45,12 +45,12 @@
 }
 .project-info,
 .project-info a{
-    color: #C7EFCF;
+    color: #6242f4;
     font-weight: bold;
     font-size: 0.9rem;
 }
 .project-info a:hover{
-    color: #FAF9FF;
+    color: #C7EFCF;
 }
 /* .project-excerpt{} */
 

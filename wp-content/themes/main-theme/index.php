@@ -32,7 +32,11 @@
                                 <?php the_date(); ?> By <?php the_author_posts_link(); ?>
                             </p>          
                             <p class="blog-post-excerpt">
-                                <?php echo wp_trim_words(get_the_content(), 20); ?>
+<?php                           if(has_excerpt())
+                                    the_excerpt();
+                                else
+                                    echo wp_trim_words(get_the_content(), 20); 
+?>
                             </p>
                         </div>  
                     </div>       

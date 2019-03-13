@@ -34,7 +34,11 @@
                             }
 ?>
                             <p class="search-result-excerpt">
-                                <?php echo wp_trim_words(get_the_content(), 30); ?>
+<?php                           if(has_excerpt())
+                                    the_excerpt();
+                                else
+                                    echo wp_trim_words(get_the_content(), 20); 
+?>
                             </p>
                         </div>  
                     </div>       

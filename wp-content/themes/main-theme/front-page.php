@@ -29,7 +29,11 @@
                                 By <?php the_author_posts_link(); ?>
                             </p>          
                             <h4 class="recent-post-excerpt">
-                                <?php echo wp_trim_words(get_the_content(), 20); ?>
+<?php                           if(has_excerpt())
+                                    the_excerpt();
+                                else
+                                    echo wp_trim_words(get_the_content(), 20); 
+?>
                             </h4>
                             <p class="recent-post-date"><?php the_date(); ?></p>
                         </div>  
