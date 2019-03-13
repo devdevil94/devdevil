@@ -2,42 +2,53 @@
 
 <?php get_header(); ?>
 
-<div id="blog-posts-body" class="main-body">
-    <div class="section blog-posts">
+<div id="archive-body" class="main-body">
+    <div class="section archive-posts">
         <div class="blog-posts-container">
 <?php
-            if(is_author()){
-                the_post();
-                echo '<h3 class="blog-posts-heading>Posts by '.get_the_author().'</h3>';
-                rewind_posts();
-            }elseif(is_category()){
-                echo '<h3 class="blog-posts-heading">Posts on '.single_cat_title().'</h3>';                
-            }
-            $postsListQuery = new WP_Query(array(
+            // if(is_author()){
+            //     the_post();
+            //     echo '<h3 class="blog-posts-heading>Posts by '.get_the_author().'</h3>';
+            //     rewind_posts();
+            // }elseif(is_category()){
+            //     echo '<h3 class="blog-posts-heading">Posts on '.single_cat_title().'</h3>';                
+            // }
+
+            add_filter('get_the_archive_title', function ($title) {
+                if(is_author()) {
+                    $title = 'Posts By '.get_the_author();
+                }elseif(is_category()){
+                    $title = single_cat_title();
+                }
+                return $title;
+            });
+            the_archive_title('<h3 class="blog-posts-heading">', '</h3>');
+            
+            $archivePostsQuery = new WP_Query(array(
                 'post_type' => array('post', 'project'),
                 'posts_per_page' => 10,
                 'paged' => (get_query_var('paged')) ? absint(get_query_var('paged')) : 1
             ));
-            if($postsListQuery->have_posts()){
-                while($postsListQuery->have_posts()){
-                    $postsListQuery->the_post();
+            if($archivePostsQuery->have_posts()){
+                while($archivePostsQuery->have_posts()){
+                    $archivePostsQuery->the_post();
 ?>
-                    <div class="blog-post-panel">
-                        <div class="blog-post-thumbnail">
+                    <div class="archive-post-panel">
+                        <div class="archive-post-thumbnail">
                             <a href="<?php the_permalink(); ?>">
                                 <?php the_post_thumbnail(); ?>
                             </a>
                         </div>
-                        <div class="blog-post-content">
-                            <h3 class="blog-post-title">
+                        <div class="archive-post-content">
+                            <h3 class="archive-post-title">
                                 <a href="<?php the_permalink(); ?>">
                                     <?php the_title(); ?>
                                 </a>
                             </h3>
-                            <p class="blog-post-info">
+                            <p class="archive-post-info">
                                 <?php the_date(); ?> By <?php the_author_posts_link(); ?>
                             </p>          
-                            <h4 class="blog-post-excerpt">
+                            <h4 class="archive-post-excerpt">
                                 <?php echo wp_trim_words(get_the_content(), 20); ?>
                             </h4>
                         </div>  
@@ -51,7 +62,7 @@
                         'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
                         'format' => '?paged=%#%',
                         'current' => max(1, get_query_var('paged')),
-                        'total' => $postsListQuery->max_num_pages
+                        'total' => $archivePostsQuery->max_num_pages
                     );
                     echo paginate_links($pagArgs);
                 echo '</div>';

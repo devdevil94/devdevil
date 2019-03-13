@@ -56,6 +56,10 @@ function load_custom_files(){
     get_template_directory_uri().'/css/projects-list.css',
     array(), microtime(), 'all');
 
+    wp_enqueue_style('archive-style', 
+    get_template_directory_uri().'/css/archive.css',
+    array(), microtime(), 'all');
+
     wp_enqueue_style('search-style', 
     get_template_directory_uri().'/css/search.css',
     array(), microtime(), 'all');
