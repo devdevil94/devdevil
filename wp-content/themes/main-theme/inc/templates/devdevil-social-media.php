@@ -19,7 +19,7 @@ $facebookLink = 'https://www.facebook.com/'.esc_attr(get_option('facebook'));
             <i class="fab fa-google fa-2x"></i>
         </a>
         <a href=" <?php echo $facebookLink; ?>">
-            <i class="fab fa-facebook fa-2x"></i>
+            <i class="fab fa-pinterest fa-2x"></i>
         </a>
     </div>
 </div>

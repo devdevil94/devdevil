@@ -34,7 +34,6 @@
 }
 .recent-post-thumbnail{
     text-align: center;
-    width: auto;
     border: 4px solid #C7EFCF;
 }
 
@@ -64,7 +63,6 @@
 }
 .recent-post-excerpt{
     padding: 10px 20px;
-    text-align: justify;
     font-weight: normal;
 }
 .recent-post-author{
