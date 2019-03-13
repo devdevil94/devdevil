@@ -1,6 +1,7 @@
 /*//////// Single Post Section \\\\\\\\*/
 #single-post-body,
-#single-page-body{
+#single-page-body,
+#contact-page-body{
     display: flex;
     padding: 50px 12%;
 }
@@ -85,7 +86,8 @@
 
 @media screen and (max-width: 990px){
     #single-post-body,
-    #single-page-body{
+    #single-page-body,
+    #contact-page-body{
         flex-direction: column;
     }
     .single-post-container,
