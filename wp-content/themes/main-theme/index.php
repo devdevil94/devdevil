@@ -31,9 +31,9 @@
                             <p class="blog-post-info">
                                 <?php the_date(); ?> By <?php the_author_posts_link(); ?>
                             </p>          
-                            <h4 class="blog-post-excerpt">
+                            <p class="blog-post-excerpt">
                                 <?php echo wp_trim_words(get_the_content(), 20); ?>
-                            </h4>
+                            </p>
                         </div>  
                     </div>       
 <?php 
