@@ -28,9 +28,11 @@
 }
 .project-thumbnail{
     padding: 10px;
+    flex: 2;
 }
 .project-content{
     padding: 10px;
+    flex: 2;
 }
 .project-title a{
     color: rgb(56, 53, 53);

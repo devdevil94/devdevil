@@ -29,9 +29,11 @@
 }
 .blog-post-thumbnail{
     padding: 10px;
+    flex: 2;
 }
 .blog-post-content{
     padding: 10px;
+    flex: 2;
 }
 .blog-post-title a{
     color: rgb(56, 53, 53);

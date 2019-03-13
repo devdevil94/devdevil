@@ -64,6 +64,7 @@
                 echo '</div>';
               
             }
+            wp_reset_postdata();
 ?>          
         </div>
     </div>

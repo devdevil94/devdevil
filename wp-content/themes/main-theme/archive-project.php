@@ -59,9 +59,9 @@
 ?>
                 </div>
 <?php               
-            }else{
-
             }
+            wp_reset_postdata();
+
 ?>          
         </div>
     </div>

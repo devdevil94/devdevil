@@ -9,14 +9,15 @@ function devdevil_project_post_type(){
         'singular_name' => 'Project'
     );
 
-    $supports = array('title', 'editor', 'excerpt',
-    'custom-fields', 'thumbnail', 'show_in_rest');
+    $supports = array('author', 'title', 'editor', 'excerpt',
+    'custom-fields', 'thumbnail');
 
     register_post_type('project', array( 
         'has_archive' => true,
         'supports' => $supports,
         'rewrite' => array('slug' => 'projects'),
         'public' => true,
+        'show_in_rest' => true,
         'labels' => $labels,
         'menu_icon' => 'dashicons-calendar',
         'taxonomies' => array('category', 'post_tag')
