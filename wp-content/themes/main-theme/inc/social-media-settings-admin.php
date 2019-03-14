@@ -8,7 +8,7 @@ function devdevil_add_social_media_page(){
 
 function devdevil_social_media_settings(){
     register_setting('devdevil-social-media-options', 'twitter','devdevil_sanitize_twitter');
-    register_setting('devdevil-social-media-options', 'facebook');
+    register_setting('devdevil-social-media-options', 'pinterest');
     register_setting('devdevil-social-media-options', 'google');
     register_setting('devdevil-social-media-options', 'github');
 
@@ -23,7 +23,7 @@ function devdevil_social_media_settings(){
 
     add_settings_field('sidebar-twitter', 'Twitter', 'devdevil_twitter',
     'devdevil_social_media_options', 'devdevil-social-media');
-    add_settings_field('sidebar-facebook', 'Facebook', 'devdevil_facebook',
+    add_settings_field('sidebar-pinterest', 'Pinterest', 'devdevil_pinterest',
     'devdevil_social_media_options', 'devdevil-social-media');
     add_settings_field('sidebar-google-plus', 'Google', 'devdevil_google',
     'devdevil_social_media_options', 'devdevil-social-media');
@@ -37,7 +37,7 @@ function social_media_accounts_callback($input){
 
 function devdevil_social_media_accounts(){
     $options = get_option('social_media_accounts');
-    $accounts = array('twitter', 'facebook', 'google', 'github');
+    $accounts = array('twitter', 'pinterest', 'google', 'github');
     $result = '<br>';
     foreach($accounts as $account){
         $checked = (@$options[$account] == 1 ? 'checked' : '');
@@ -65,10 +65,10 @@ function devdevil_twitter(){
     " placeholder="Twitter" />
     <p class="description">Enter your twitter username without the \'@\' character</p>';
 }
-function devdevil_facebook(){
-    $facebook = esc_attr(get_option('facebook'));
-    echo '<input type="text" name="facebook" value="'.$facebook.'
-    " placeholder="Facebook" />';
+function devdevil_pinterest(){
+    $pinterest = esc_attr(get_option('pinterest'));
+    echo '<input type="text" name="pinterest" value="'.$pinterest.'
+    " placeholder="pinterest" />';
 }
 function devdevil_google(){
     $google = esc_attr(get_option('google'));

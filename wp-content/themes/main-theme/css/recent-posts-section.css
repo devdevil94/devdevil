@@ -36,6 +36,9 @@
 .recent-post-category a{
     color: #6242f4;
 }
+.recent-post-category a:hover{
+    color: rgb(156, 156, 156);
+}
 .recent-posts-inner{
     flex: 1;
     margin-left: 2px;
