@@ -30,8 +30,11 @@
 .recent-post-category{
     position: absolute;
     top: 0;
-    padding: 5px;
+    padding: 3px 5px;
     background-color: #C7EFCF;
+}
+.recent-post-category a{
+    color: #6242f4;
 }
 .recent-posts-inner{
     flex: 1;

@@ -16,12 +16,14 @@
 }
 .archive-post-thumbnail{
     padding: 10px;
+    flex: 1;
 }
 .archive-post-thumbnail a img{
     width: 100%;
 }
 .archive-post-content{
     padding: 10px;
+    flex: 1;
 }
 .archive-post-title a{
     color: rgb(56, 53, 53);

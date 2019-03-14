@@ -43,7 +43,7 @@
 <?php
                 $homePostsQuery = new WP_Query(array(
                     'posts_per_page' => 2,
-                    'offset' => 2
+                    'offset' => 3
                 ));
                 if($homePostsQuery->have_posts()){
                     while($homePostsQuery->have_posts()){
