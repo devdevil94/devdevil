@@ -20,58 +20,46 @@
 }
 .recent-posts-outer{
     display: flex;
+    padding: 3px;
 }
 .recent-post-panel{   
     position: relative;
-    flex: auto;
-    margin: 5px;
-    flex-basis: 40%;
 }
-
-.recent-post-thumbnail img{
-    height: 100%;
+.recent-posts-inner{
+    flex: 1;
+    margin-left: 2px;
+    margin-right: 2px;
 }
-/* .two-rows{
+.recent-post-thumbnail a img{
+    width: 100%;
+}
+.two-rows{
     display: flex;
     flex-direction: column;
-} */
-
+    justify-content: space-between;
+}
 .recent-post-body{
     padding: 5px;
-    background-color: #C7EFCF;
+    background-color: rgba(98, 66, 244, 0.7);
     position: absolute;
     bottom: 0;
     width: 100%;
-    opacity: 0.6;
-    /* display: none; */
 }
-/*
+
 .recent-post-title{
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin: 3px 0;
 }
 .recent-post-title a{
-    color: #6242f4;
+    color: #C7EFCF;
 }
 .recent-post-title a:hover{
     color: #3c2896;
 
 }
 .recent-post-date{
-    text-align: start;
-    margin-top: 20px;
-    color: rgb(156, 156, 156);
+    color: #fff;
     font-weight: bold;
     padding-left: 5px;
-}
-.recent-post-excerpt{
-    padding: 10px 20px;
-    font-weight: normal;
-}
-.recent-post-author{
-    text-align: end;
-    padding-right: 20px;
 }
 .recent-post-author a{
     font-weight: bold;
@@ -79,8 +67,13 @@
 }
 .recent-post-author a:hover{
     color: rgb(156, 156, 156);
-} */
-
+} 
+.hide-info{
+    display: none;
+}
+.marginTop{
+    margin-top: 20px;
+}
 @media screen and (max-width: 990px){
     #home-content{
         flex-direction: column;

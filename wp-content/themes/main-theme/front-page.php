@@ -16,33 +16,14 @@
                     if($homePostsQuery->have_posts()){
                         while($homePostsQuery->have_posts()){
                             $homePostsQuery->the_post();
-?>
-                            <div class="recent-post-panel">
-                                <div class="recent-post-thumbnail">
-                                    <a href="<?php the_permalink(); ?>">
-                                        <?php the_post_thumbnail();?>
-                                    </a>
-                                </div>
-                                <div class="recent-post-body">
-                                    <h3 class="recent-post-title">
-                                        <a href="<?php the_permalink(); ?>">
-                                            <?php the_title(); ?>
-                                        </a>
-                                    </h3>
-                                    <p class="recent-post-author">
-                                        By <?php the_author_posts_link(); ?>
-                                    </p>          
-                                    <p class="recent-post-date"><?php the_date(); ?></p>
-                                </div>  
-                            </div> 
-<?php 
+                            get_template_part('template-parts/content', 'recent-post-panel');
                         }
                     }
                     wp_reset_postdata();
 ?>
                 </div>
-                
-                <div class="recent-posts-inner">
+
+                <div class="recent-posts-inner two-rows">
 <?php 
                     $homePostsQuery = new WP_Query(array(
                         'posts_per_page' => 2,
@@ -51,31 +32,30 @@
                     if($homePostsQuery->have_posts()){
                         while($homePostsQuery->have_posts()){
                             $homePostsQuery->the_post();
-?>
-                            <div class="recent-post-panel">
-                                <div class="recent-post-thumbnail">
-                                    <a href="<?php the_permalink(); ?>">
-                                        <?php the_post_thumbnail();?>
-                                    </a>
-                                </div>
-                                <div class="recent-post-body">
-                                    <h3 class="recent-post-title">
-                                        <a href="<?php the_permalink(); ?>">
-                                            <?php the_title(); ?>
-                                        </a>
-                                    </h3>
-                                    <p class="recent-post-author">
-                                        By <?php the_author_posts_link(); ?>
-                                    </p>          
-                                    <p class="recent-post-date"><?php the_date(); ?></p>
-                                </div>  
-                            </div>
-<?php
+                            get_template_part('template-parts/content', 'recent-post-panel');    
                         }
                     }
+                    wp_reset_postdata();
 ?>
                 </div>
             </div>
+            <div class="recent-posts-outer marginTop">
+<?php
+                $homePostsQuery = new WP_Query(array(
+                    'posts_per_page' => 2,
+                    'offset' => 2
+                ));
+                if($homePostsQuery->have_posts()){
+                    while($homePostsQuery->have_posts()){
+                        $homePostsQuery->the_post();
+                        echo '<div class="recent-posts-inner">';
+                        get_template_part('template-parts/content', 'recent-post-panel');
+                        echo '</div>';
+                    }
+                }
+                wp_reset_postdata();
+?>
+                </div>
         </div>
         <div class="view-posts">
             <a class="big-btn" href="<?php echo site_url('/blog'); ?>">View All Posts</a>
