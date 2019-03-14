@@ -1,8 +1,14 @@
 
 <div class="recent-post-panel">
+    <span class="recent-post-category"><?php the_category(); ?></span>
     <div class="recent-post-thumbnail">
         <a href="<?php the_permalink(); ?>">
-            <?php the_post_thumbnail();?>
+<?php       $postIndex = $homePostsQuery->current_post;
+
+            if($postIndex == 1) the_post_thumbnail('post-thumbnail-tall');
+            else the_post_thumbnail();
+            
+?>
         </a>
     </div>
     <div class="recent-post-body">

@@ -9,8 +9,6 @@
             add_filter('get_the_archive_title', function ($title) {
                 if(is_author()){
                     $title = 'Posts By '.get_the_author();
-                }elseif(is_category()){
-                    $title = single_cat_title();
                 }
                 return $title;
             });

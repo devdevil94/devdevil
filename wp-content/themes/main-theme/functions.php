@@ -72,6 +72,7 @@ function devdevil_theme_support(){
     add_theme_support('html5', array('comment-list', 'comment-form', 'search-form'));
     add_theme_support( 'post-thumbnails' );
     add_image_size('blog-post-thumbnail', 550, 400, true);
+    add_image_size('post-thumbnail-tall', 400, 500, true);
 }
 
 function devdevil_widgets_setup(){

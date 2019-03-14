@@ -17,6 +17,9 @@
 .archive-post-thumbnail{
     padding: 10px;
 }
+.archive-post-thumbnail a img{
+    width: 100%;
+}
 .archive-post-content{
     padding: 10px;
 }
