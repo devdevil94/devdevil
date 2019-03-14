@@ -11,9 +11,10 @@
                 <?php the_title(); ?>
             </a>
         </h3>
-        <p class="recent-post-author hide-info">
-            By <?php the_author_posts_link(); ?>
-        </p>          
-        <p class="recent-post-date hide-info"><?php the_date(); ?></p>
+        <div class="recent-post-info hide-info">
+            <p class="recent-post-author">By <?php the_author_posts_link(); ?></p>          
+            <p class="recent-post-date"><?php the_date(); ?></p>
+        </div>
+        
     </div>  
 </div>  

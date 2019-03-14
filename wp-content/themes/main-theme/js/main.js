@@ -94,15 +94,24 @@ function navSlide(){
 }(jQuery));
 
 (function($) {
-    $('.recent-post-panel').hover(function(e){
-        e.preventDefault();
-        var panel = $(this),
-            postAuthor = panel.find('.recent-post-author'),
-            postDate = panel.find('.recent-post-date');     
+    $('.recent-post-panel').hover(
+        function(e){
+            e.preventDefault();
+            var panel = $(this),
+                postInfo = panel.find('.recent-post-info');
 
-        postAuthor.toggleClass('hide-info');
-        postDate.toggleClass('hide-info');
-    })
+            //postInfo.removeClass('hide-info');
+            postInfo.fadeIn(300);
+        },
+        function(e){
+            e.preventDefault();
+            var panel = $(this),
+                postInfo = panel.find('.recent-post-info');
+
+            //postInfo.addClass('hide-info');
+            postInfo.fadeOut(300);
+        }
+    )
 }(jQuery));
 
 
