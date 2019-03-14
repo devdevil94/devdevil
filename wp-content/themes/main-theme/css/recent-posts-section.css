@@ -4,8 +4,10 @@
     padding: 50px 12%;
 
 }
-.recent-posts-heading{
+.recent-posts-heading,
+.recent-porojects-heading{
     font-size: 1.8rem;
+    margin-bottom: 20px;
 }
 .recent-posts{
     flex: 6;
@@ -45,7 +47,6 @@
     bottom: 0;
     width: 100%;
 }
-
 .recent-post-title{
     margin: 3px 0;
 }
@@ -54,14 +55,13 @@
 }
 .recent-post-title a:hover{
     color: #3c2896;
-
 }
 .recent-post-date{
     color: #fff;
-    font-weight: bold;
-    padding-left: 5px;
+    
 }
-.recent-post-author a{
+.recent-post-author a,
+.recent-post-author{
     font-weight: bold;
     color: rgb(56, 53, 53);
 }
@@ -85,11 +85,14 @@
         padding-left: 5%;
         padding-right: 5%;
     }
+    .recent-posts-outer{
+        flex-direction: column;
+    }
 }
 
 .view-posts{
     text-align: center;
-    margin-top: 30px;
+    margin: 40px 0;
 }
 
 .view-posts a{

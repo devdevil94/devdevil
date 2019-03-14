@@ -55,11 +55,29 @@
                 }
                 wp_reset_postdata();
 ?>
-                </div>
+            </div>
+            <div class="view-posts">
+                <a class="big-btn" href="<?php echo site_url('/blog'); ?>">View All Posts</a>
+            </div> 
+            <h3 class="recent-porojects-heading">Recent Projects</h3>
+<?php
+            $projectsListQuery = new WP_Query(array(
+                'posts_per_page' => 5,
+                'post_type' => 'project',
+                'paged' => (get_query_var('paged')) ? absint(get_query_var('paged')) : 1
+            ));
+            if($projectsListQuery->have_posts()){
+                while($projectsListQuery->have_posts()){
+                    $projectsListQuery->the_post();
+                    get_template_part('template-parts/content', 'projects-list');
+                }
+            }
+?>
+            <div class="view-posts">
+                <a class="big-btn" href="<?php echo site_url('/projects'); ?>">View All Projects</a>
+            </div>
         </div>
-        <div class="view-posts">
-            <a class="big-btn" href="<?php echo site_url('/blog'); ?>">View All Posts</a>
-        </div>        
+               
     </div>
         
     <div class="section sidebar">
