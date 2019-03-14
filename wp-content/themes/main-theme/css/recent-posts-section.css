@@ -20,12 +20,14 @@
     0 4px 8px 0 rgba(0,0,0,0.2),
     0 6px 20px 0 rgba(0,0,0,0.19);
 }
-.recent-posts-outer{
+.recent-posts-inner{
     display: flex;
     padding: 3px;
 }
 .recent-post-panel{   
     position: relative;
+    flex: 1;
+    margin: 3px;
 }
 .recent-post-category{
     position: absolute;
@@ -39,11 +41,7 @@
 .recent-post-category a:hover{
     color: rgb(156, 156, 156);
 }
-.recent-posts-inner{
-    flex: 1;
-    margin-left: 2px;
-    margin-right: 2px;
-}
+
 .recent-post-thumbnail a img{
     width: 100%;
 }

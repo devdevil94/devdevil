@@ -101,7 +101,7 @@ function navSlide(){
                 postInfo = panel.find('.recent-post-info');
 
             //postInfo.removeClass('hide-info');
-            postInfo.fadeIn(400);
+            postInfo.fadeIn(500);
         },
         function(e){
             e.preventDefault();
@@ -109,7 +109,7 @@ function navSlide(){
                 postInfo = panel.find('.recent-post-info');
 
             //postInfo.addClass('hide-info');
-            postInfo.fadeOut(400);
+            postInfo.fadeOut(500);
         }
     )
 }(jQuery));
