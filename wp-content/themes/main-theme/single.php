@@ -19,7 +19,7 @@
                 </div>
                 <div class="single-post-content"><?php the_content(); ?></div>
                 <div class="single-post-pag">
-                    <?php get_template_part('content', 'single-pagination'); ?>                         
+                    <?php get_template_part('template-parts/content', 'single-pagination'); ?>                         
                 </div>
 <?php
                 
