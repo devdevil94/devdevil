@@ -93,7 +93,17 @@ function navSlide(){
     });
 }(jQuery));
 
+(function($) {
+    $('.recent-post-panel').hover(function(e){
+        e.preventDefault();
+        var panel = $(this),
+            postAuthor = panel.find('.recent-post-author'),
+            postDate = panel.find('.recent-post-date');     
 
+        postAuthor.toggleClass('hide-info');
+        postDate.toggleClass('hide-info');
+    })
+}(jQuery));
 
 
 (function($) {
